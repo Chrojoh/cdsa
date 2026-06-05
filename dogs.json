@@ -4154,5 +4154,4866 @@
         }
       ]
     }
+  },
+  {
+    "id": "0006",
+    "name": "Pounce",
+    "dock": {
+      "lj": {
+        "titlePts": 70,
+        "winPts": 0,
+        "personalBest": "20'6\"",
+        "history": [
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Long Jump3",
+            "bestFeet": 18,
+            "bestInches": 9,
+            "division": "Senior",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Long Jump4",
+            "bestFeet": 20,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 13,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2013-08-11",
+            "event": "WCC Long Jump 1",
+            "bestFeet": 20,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 13,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-08-11",
+            "event": "WCC Long Jump 2",
+            "bestFeet": 20,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 12,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-08-12",
+            "event": "WCC Long Jump 6",
+            "bestFeet": 20,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 9,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-06-15",
+            "event": "Season Opener Long Jump 2",
+            "bestFeet": 18,
+            "bestInches": 3,
+            "division": "Senior",
+            "placement": 5,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-06-16",
+            "event": "Season Opener Long Jump 5",
+            "bestFeet": 17,
+            "bestInches": 3,
+            "division": "Senior",
+            "placement": 4,
+            "pts": 10,
+            "win": 0
+          }
+        ]
+      },
+      "ss": {
+        "titlePts": 30,
+        "winPts": 0,
+        "personalBest": "19.05s",
+        "history": [
+          {
+            "date": "2023-08-11",
+            "event": "WCC SpeedSwim1",
+            "time": 19.05,
+            "division": "Senior",
+            "placement": 7,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-06-15",
+            "event": "Season Opener SpeedSwim1",
+            "time": 19.1,
+            "division": "Senior",
+            "placement": 6,
+            "pts": 15,
+            "win": 0
+          }
+        ]
+      },
+      "gj": {
+        "titlePts": 30,
+        "winPts": 0,
+        "personalBest": "14'",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Grab1",
+            "best": 14,
+            "division": "Senior",
+            "placement": 5,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-08-12",
+            "event": "WCC",
+            "best": 14,
+            "division": "Senior",
+            "placement": 10,
+            "pts": 15,
+            "win": 0
+          }
+        ]
+      },
+      "ff": {
+        "titlePts": 15,
+        "winPts": 0,
+        "personalBest": "77pts 60.77sec",
+        "history": [
+          {
+            "date": "2024-06-16",
+            "event": "Fast Fetch 1",
+            "totalPts": 77,
+            "time": 60.77,
+            "division": "Junior",
+            "placement": 3,
+            "pts": 15,
+            "win": 0
+          }
+        ]
+      }
+    },
+    "titlesEarned": [],
+    "shed": {
+      "levels": {
+        "1": {
+          "passes": 0,
+          "done": false,
+          "titleDate": null
+        },
+        "2": {
+          "passes": 0,
+          "done": false,
+          "titleDate": null
+        },
+        "3": {
+          "passes": 0,
+          "done": false,
+          "titleDate": null,
+          "locked": true
+        },
+        "4": {
+          "passes": 0,
+          "done": false,
+          "titleDate": null,
+          "locked": true
+        }
+      },
+      "tests": {
+        "locate": false,
+        "retrieve": false,
+        "seasonal": false,
+        "multiples": false
+      },
+      "winPts": 0,
+      "trialHistory": []
+    }
+  },
+  {
+    "id": "0007",
+    "name": "Avi",
+    "dock": {
+      "lj": {
+        "titlePts": 20,
+        "winPts": 0,
+        "personalBest": "18'6\"",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Long Jump1",
+            "bestFeet": 18,
+            "bestInches": 0,
+            "division": "Senior",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Long Jump2",
+            "bestFeet": 18,
+            "bestInches": 6,
+            "division": "Senior",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          }
+        ]
+      },
+      "ss": {
+        "titlePts": 15,
+        "winPts": 0,
+        "personalBest": "18.57s",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash SpeedSwim1",
+            "time": 18.57,
+            "division": "Senior",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          }
+        ]
+      },
+      "gj": {
+        "titlePts": 15,
+        "winPts": 0,
+        "personalBest": "16'",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Grab1",
+            "best": 16,
+            "division": "Senior",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          }
+        ]
+      },
+      "ff": {
+        "titlePts": 15,
+        "winPts": 2,
+        "personalBest": "63pts 34.17sec",
+        "history": [
+          {
+            "date": "2024-06-16",
+            "event": "Fast Fetch 1",
+            "totalPts": 63,
+            "time": 34.17,
+            "division": "Junior",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          }
+        ]
+      }
+    },
+    "titlesEarned": []
+  },
+  {
+    "id": "0008",
+    "name": "Circa",
+    "dock": {
+      "lj": {
+        "titlePts": 422,
+        "winPts": 52,
+        "personalBest": "24'6\"",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash-Long Jump 1",
+            "bestFeet": 23,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 4,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash- Long Jump 3",
+            "bestFeet": 22,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 6,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash - Long Jump 5",
+            "bestFeet": 22,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 4,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-09",
+            "event": "Summer Splash-Long Jump Finals",
+            "division": "Master",
+            "placement": 3,
+            "pts": 0,
+            "win": 1,
+            "finals": true
+          },
+          {
+            "date": "2024-06-15",
+            "event": "Season Opener Long Jump 1",
+            "bestFeet": 21,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 5,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-06-15",
+            "event": "Season Opener Long Jump 3",
+            "bestFeet": 23,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-06-16",
+            "event": "Season Opener Long Jump 5",
+            "bestFeet": 22,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 4,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-05",
+            "event": "Summer Splash Long Jump 1",
+            "bestFeet": 21,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-05",
+            "event": "Summer Splash Long Jump 2",
+            "bestFeet": 22,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-05",
+            "event": "Summer Splash Long Jump 3",
+            "bestFeet": 21,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2024-07-05",
+            "event": "Summer Splash Long Jump 4",
+            "bestFeet": 21,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2024-07-06",
+            "event": "Summer Splash Long Jump 5",
+            "bestFeet": 22,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-06",
+            "event": "Summer Splash Long Jump 7",
+            "bestFeet": 21,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2024-07-07",
+            "event": "Summer Splash Long Jump 8",
+            "bestFeet": 22,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2024-07-07",
+            "event": "Summer Splash Long Jump 9",
+            "bestFeet": 22,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2024-08-09",
+            "event": "WCC Long Jump 1",
+            "bestFeet": 22,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 6,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-08-09",
+            "event": "WCC Long Jump 3",
+            "bestFeet": 21,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 8,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-08-10",
+            "event": "WCC Long Jump 5",
+            "bestFeet": 22,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 4,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-08-11",
+            "event": "WCC Long Jump Finals",
+            "division": "Master",
+            "placement": 5,
+            "pts": 0,
+            "win": 0,
+            "finals": true
+          },
+          {
+            "date": "2025-06-14",
+            "event": "Season Opener LJ1",
+            "bestFeet": 24,
+            "bestInches": 3,
+            "division": "Elite",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2025-06-14",
+            "event": "Season Opener LJ2",
+            "bestFeet": 24,
+            "bestInches": 6,
+            "division": "Elite",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2025-06-14",
+            "event": "Season Opener LJ3",
+            "bestFeet": 23,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2025-06-15",
+            "event": "Season Opener LJ4",
+            "bestFeet": 24,
+            "bestInches": 3,
+            "division": "Elite",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2025-06-15",
+            "event": "Season Opener LJ5",
+            "bestFeet": 24,
+            "bestInches": 0,
+            "division": "Elite",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2025-06-15",
+            "event": "Season Opener LJ6",
+            "bestFeet": 23,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2025-08-08",
+            "event": "WCC Long Jump 1",
+            "bestFeet": 24,
+            "bestInches": 3,
+            "division": "Elite",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-08-08",
+            "event": "WCC Long Jump 2",
+            "bestFeet": 22,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-08-08",
+            "event": "WCC Long Jump 3",
+            "bestFeet": 23,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2025-08-08",
+            "event": "WCC Long Jump 4",
+            "bestFeet": 21,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2025-08-09",
+            "event": "WCC Long Jump 5",
+            "bestFeet": 23,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2025-08-09",
+            "event": "WCC Long Jump 6",
+            "bestFeet": 23,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2025-08-09",
+            "event": "WCC Long Jump 7",
+            "bestFeet": 22,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2025-08-10",
+            "event": "WCC Long Jump 8",
+            "bestFeet": 22,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2025-08-10",
+            "event": "WCC Long Jump Finals",
+            "division": "Master",
+            "placement": 1,
+            "pts": 0,
+            "win": 5,
+            "finals": true
+          },
+          {
+            "date": "2025-09-06",
+            "event": "Eromit's Fall Finale Long Jump 1",
+            "division": "Master",
+            "placement": 1,
+            "pts": 0,
+            "win": 2,
+            "finals": true
+          },
+          {
+            "date": "2025-09-06",
+            "event": "Eromit's Fall Finale Long Jump 2",
+            "division": "Master",
+            "placement": 1,
+            "pts": 0,
+            "win": 2,
+            "finals": true
+          },
+          {
+            "date": "2025-09-06",
+            "event": "Eromit's Fall Finale Long Jump 3",
+            "division": "Master",
+            "placement": 1,
+            "pts": 0,
+            "win": 2,
+            "finals": true
+          },
+          {
+            "date": "2025-09-07",
+            "event": "Eromit's Fall Finale Long Jump 4",
+            "division": "Master",
+            "placement": 1,
+            "pts": 0,
+            "win": 2,
+            "finals": true
+          },
+          {
+            "date": "2025-09-07",
+            "event": "Eromit's Fall Finale Long Jump 5",
+            "division": "Master",
+            "placement": 1,
+            "pts": 0,
+            "win": 2,
+            "finals": true
+          },
+          {
+            "date": "2025-09-07",
+            "event": "Eromit's Fall Finale Long Jump 6",
+            "division": "Master",
+            "placement": 1,
+            "pts": 0,
+            "win": 2,
+            "finals": true
+          }
+        ]
+      },
+      "ss": {
+        "titlePts": 165,
+        "winPts": 4,
+        "personalBest": "17.37s",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash- Speed Swim1",
+            "time": 17.37,
+            "division": "Master",
+            "placement": 11,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash- Speed Swim 2",
+            "time": 19.76,
+            "division": "Junior",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-06-15",
+            "event": "Season Opener Speed Swim 1",
+            "time": null,
+            "division": "Senior",
+            "placement": 5,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-06-16",
+            "event": "Season Opener Speed Swim 2",
+            "time": 18.71,
+            "division": "Senior",
+            "placement": 4,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-07-05",
+            "event": "Summer Splash Speed Swim 1",
+            "time": 19.05,
+            "division": "Senior",
+            "placement": 4,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-07-07",
+            "event": "Summer Splash Speed Swim 2",
+            "time": 17.85,
+            "division": "Senior",
+            "placement": 3,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-08-09",
+            "event": "WCC Speed Swim 1",
+            "time": 19.76,
+            "division": "Junior",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-08-11",
+            "event": "WCC Speed Swim 2",
+            "time": 19.12,
+            "division": "Senior",
+            "placement": 8,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2025-06-14",
+            "event": "Season Opener",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "2025-08-08",
+            "event": "WCC - SS1",
+            "time": 18.72,
+            "division": "Senior",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2025-08-10",
+            "event": "WCC-SS2",
+            "time": 22.32,
+            "division": "Novice",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2025-09-06",
+            "event": "Eromit's Fall Finale Speed Swim 1",
+            "time": 19.0,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          }
+        ]
+      },
+      "gj": {
+        "titlePts": 120,
+        "winPts": 4,
+        "personalBest": "17'",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "July Summer Splash",
+            "best": 15,
+            "division": "Senior",
+            "placement": 4,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-07-07",
+            "event": "July Summer Splash",
+            "best": 16,
+            "division": "Senior",
+            "placement": 3,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-06-15",
+            "event": "Season Opener",
+            "best": 15,
+            "division": "Senior",
+            "placement": 5,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-07-06",
+            "event": "Summer Splash",
+            "best": 17,
+            "division": "Senior",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-08-10",
+            "event": "WCC",
+            "best": 16,
+            "division": "Senior",
+            "placement": 4,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2025-06-14",
+            "event": "Season Opener",
+            "best": 17,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2025-08-09",
+            "event": "WCC",
+            "best": 17,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2025-09-06",
+            "event": "Eromit's Fall Finale",
+            "best": 16,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          }
+        ]
+      },
+      "ff": {
+        "titlePts": 105,
+        "winPts": 2,
+        "personalBest": "72pts 54.83sec",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash - Fast Fetch 1",
+            "totalPts": 72,
+            "time": 54.83,
+            "division": "Senior",
+            "placement": 5,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash - Fast Fetch 2",
+            "totalPts": 69,
+            "time": 43.84,
+            "division": "Junior",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-06-16",
+            "event": "Season Opener",
+            "totalPts": 55,
+            "time": 33.4,
+            "division": "NQ",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "2024-07-08",
+            "event": "Summer Splash",
+            "totalPts": 65,
+            "time": 36.97,
+            "division": "Junior",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2024-08-11",
+            "event": "WCC",
+            "totalPts": 61,
+            "time": 50.15,
+            "division": "Junior",
+            "placement": 9,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2025-06-15",
+            "event": "Season Opener",
+            "totalPts": 63,
+            "time": 42.73,
+            "division": "Junior",
+            "placement": 3,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2025-08-10",
+            "event": "WCC",
+            "totalPts": 65,
+            "time": 46.58,
+            "division": "Junior",
+            "placement": 5,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2025-09-07",
+            "event": "Eromit's Fall Finale",
+            "totalPts": 65,
+            "time": 42.46,
+            "division": "Junior",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          }
+        ]
+      }
+    },
+    "titlesEarned": [
+      {
+        "name": "Long Jump",
+        "division": "Master",
+        "date": "2024-06-16"
+      },
+      {
+        "name": "Speed Swim",
+        "division": "Senior",
+        "date": "2024-06-15"
+      },
+      {
+        "name": "Grab Jump",
+        "division": "Senior",
+        "date": "2024-06-15"
+      },
+      {
+        "name": "Fast Fetch",
+        "division": "Junior",
+        "date": "2024-07-07"
+      },
+      {
+        "name": "Champion Dock Diver",
+        "division": "",
+        "date": "2024-07-07"
+      },
+      {
+        "name": "Advanced Long Jump",
+        "division": "Master",
+        "date": "2025-06-14"
+      },
+      {
+        "name": "Advanced Speed Swim",
+        "division": "Senior",
+        "date": "2025-08-10"
+      }
+    ]
+  },
+  {
+    "id": "0009",
+    "name": "Shuger",
+    "dock": {
+      "lj": {
+        "titlePts": 0,
+        "winPts": 0,
+        "personalBest": "16'0\"",
+        "history": [
+          {
+            "date": "2024-07-05",
+            "event": "Summer Splash Long Jump 1",
+            "bestFeet": 15,
+            "bestInches": 6,
+            "division": "Vet Ramp",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "2024-07-05",
+            "event": "Summer Splash Long Jump 3",
+            "bestFeet": 15,
+            "bestInches": 6,
+            "division": "Vet Ramp",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "2024-07-06",
+            "event": "Summer Splash Long Jump 6",
+            "bestFeet": 15,
+            "bestInches": 3,
+            "division": "Vet Ramp",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "2024-07-07",
+            "event": "Summer Splash Long Jump 9",
+            "bestFeet": 15,
+            "bestInches": 6,
+            "division": "Vet Ramp",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "2024-08-09",
+            "event": "WCC Long Jump 2",
+            "bestFeet": 16,
+            "bestInches": 0,
+            "division": "vet ramp",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "2024-08-09",
+            "event": "WCC Long Jump 3",
+            "bestFeet": 14,
+            "bestInches": 9,
+            "division": "vet ramp",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "2024-08-10",
+            "event": "WCC Long Jump5",
+            "bestFeet": 14,
+            "bestInches": 6,
+            "division": "VET-RAMP",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "2024-08-11",
+            "event": "WCC Long Jump 8",
+            "bestFeet": 14,
+            "bestInches": 9,
+            "division": "vet ramp",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          }
+        ]
+      },
+      "ss": {
+        "titlePts": 45,
+        "winPts": 2,
+        "personalBest": "19.29s",
+        "history": [
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash- Speed Swim 2",
+            "time": 19.98,
+            "division": "Junior",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2023-08-11",
+            "event": "WCC Speed Swim 1",
+            "time": 19.29,
+            "division": "Senior",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-08-13",
+            "event": "WCC Speed Swim 2",
+            "time": 19.48,
+            "division": "Senior",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          }
+        ]
+      },
+      "gj": {
+        "titlePts": 0,
+        "winPts": 0,
+        "personalBest": null,
+        "history": []
+      },
+      "ff": {
+        "titlePts": 90,
+        "winPts": 0,
+        "personalBest": "88pts 69.90sec",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash - Fast Fetch 1",
+            "totalPts": 88,
+            "time": 69.9,
+            "division": "Junior",
+            "placement": 3,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash - Fast Fetch 2",
+            "totalPts": 86,
+            "time": 66.33,
+            "division": "Junior",
+            "placement": 3,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-08-13",
+            "event": "WCC",
+            "totalPts": 75,
+            "time": 56.9,
+            "division": "Vet Senior",
+            "placement": 6,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-06-16",
+            "event": "Season Opener",
+            "totalPts": 67,
+            "time": 59.73,
+            "division": "Junior",
+            "placement": 4,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-07-07",
+            "event": "Summer Splash",
+            "totalPts": 67,
+            "time": 56.79,
+            "division": "Junior Vet",
+            "placement": 5,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-08-11",
+            "event": "WCC",
+            "totalPts": 67,
+            "time": 54.14,
+            "division": "Junior Vet",
+            "placement": 3,
+            "pts": 15,
+            "win": 0
+          }
+        ]
+      }
+    },
+    "titlesEarned": [
+      {
+        "name": "Speed Swim",
+        "division": "Senior",
+        "date": "2013-08-13"
+      },
+      {
+        "name": "Fast Fetch",
+        "division": "Junior",
+        "date": "2023-08-13"
+      }
+    ],
+    "shed": {
+      "levels": {
+        "1": {
+          "passes": 4,
+          "done": true,
+          "titleDate": "2025-06-13"
+        },
+        "2": {
+          "passes": 0,
+          "done": false,
+          "titleDate": null
+        },
+        "3": {
+          "passes": 0,
+          "done": false,
+          "titleDate": null,
+          "locked": true
+        },
+        "4": {
+          "passes": 0,
+          "done": false,
+          "titleDate": null,
+          "locked": true
+        }
+      },
+      "tests": {
+        "locate": false,
+        "retrieve": false,
+        "seasonal": false,
+        "multiples": false
+      },
+      "winPts": 3,
+      "trialHistory": [
+        {
+          "date": "2024-06-14",
+          "event": "SeasonOpener",
+          "level": 1,
+          "time": null,
+          "qualifying": "NQ",
+          "placement": "—",
+          "winPts": 0
+        },
+        {
+          "date": "2024-06-14",
+          "event": "SeasonOpener",
+          "level": 1,
+          "time": "31.25s",
+          "qualifying": "Y",
+          "placement": "2",
+          "winPts": 1
+        },
+        {
+          "date": "2024-06-14",
+          "event": "SeasonOpener",
+          "level": 1,
+          "time": "37.09s",
+          "qualifying": "Y",
+          "placement": "1",
+          "winPts": 2
+        },
+        {
+          "date": "2025-06-13",
+          "event": "Season Opener",
+          "level": 1,
+          "time": "2:26.7",
+          "qualifying": "Y",
+          "placement": "5",
+          "winPts": 0
+        },
+        {
+          "date": "2025-06-13",
+          "event": "Season Opener",
+          "level": 1,
+          "time": "3:52.38",
+          "qualifying": "Y",
+          "placement": "4",
+          "winPts": 0
+        },
+        {
+          "date": "2025-06-13",
+          "event": "Season Opener",
+          "level": 2,
+          "time": null,
+          "qualifying": "NQ",
+          "placement": "—",
+          "winPts": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "0010",
+    "name": "Sovi",
+    "dock": {
+      "lj": {
+        "titlePts": 54,
+        "winPts": 4,
+        "personalBest": "17'9\"",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Long Jump2",
+            "bestFeet": 16,
+            "bestInches": 9,
+            "division": "Senior",
+            "placement": 5,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Long Jump 4",
+            "bestFeet": 17,
+            "bestInches": 9,
+            "division": "Senior",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-09",
+            "event": "Summer Splash Long Jump 6",
+            "bestFeet": 16,
+            "bestInches": 6,
+            "division": "Senior",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-06-15",
+            "event": "Season Opener Long Jump 2",
+            "bestFeet": 14,
+            "bestInches": 6,
+            "division": "Junior",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2024-06-16",
+            "event": "Season Opener Long Jump 4",
+            "bestFeet": 9,
+            "bestInches": 0,
+            "division": "Novice",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          }
+        ]
+      },
+      "ss": {
+        "titlePts": 0,
+        "winPts": 0,
+        "personalBest": null,
+        "history": [
+          {
+            "date": "2024-06-15",
+            "event": "Season Opene SpeedSwim1",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          }
+        ]
+      },
+      "gj": {
+        "titlePts": 0,
+        "winPts": 0,
+        "personalBest": null,
+        "history": []
+      },
+      "ff": {
+        "titlePts": 0,
+        "winPts": 0,
+        "personalBest": null,
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "",
+            "totalPts": null,
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "",
+            "totalPts": null,
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          }
+        ]
+      }
+    },
+    "titlesEarned": []
+  },
+  {
+    "id": "0011",
+    "name": "Annieoakley",
+    "dock": {
+      "lj": {
+        "titlePts": 83,
+        "winPts": 13,
+        "personalBest": "19'0\"",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Long Jump1",
+            "bestFeet": 19,
+            "bestInches": 0,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Long Jump2",
+            "bestFeet": 18,
+            "bestInches": 9,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Long Jump3",
+            "bestFeet": 18,
+            "bestInches": 6,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Long Jump4",
+            "bestFeet": 18,
+            "bestInches": 6,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2023-07-09",
+            "event": "Summer Splash Long Jump Finals",
+            "division": "Senior",
+            "placement": 1,
+            "pts": 0,
+            "win": 5,
+            "finals": true
+          },
+          {
+            "date": "2023-08-11",
+            "event": "WCC Long Jump 1",
+            "bestFeet": 16,
+            "bestInches": 3,
+            "division": "Veteran Senior",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-08-11",
+            "event": "WCC Long Jump3",
+            "bestFeet": 16,
+            "bestInches": 9,
+            "division": "VeteranSenior",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-08-12",
+            "event": "WCC Long Jump 5",
+            "bestFeet": 17,
+            "bestInches": 0,
+            "division": "Veteran Senior",
+            "placement": 4,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-08-13",
+            "event": "WCC Long Jump Finals",
+            "division": "Senior",
+            "placement": 4,
+            "pts": 0,
+            "win": 0,
+            "finals": true
+          },
+          {
+            "date": "2024-06-16",
+            "event": "Season Opener Long Jump 5",
+            "bestFeet": null,
+            "bestInches": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          }
+        ]
+      },
+      "ss": {
+        "titlePts": 60,
+        "winPts": 4,
+        "personalBest": "20.72s",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Speed swim 1",
+            "time": 20.72,
+            "division": "Junior",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Speed Swim 2",
+            "time": 22.43,
+            "division": "Novice",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2023-08-11",
+            "event": "WCC Speed Swim 1",
+            "time": 21.83,
+            "division": "Veteran Novice",
+            "placement": 3,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-08-13",
+            "event": "WCC Speed Swim 2",
+            "time": 22.4,
+            "division": "Veteran Novice",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2024-06-16",
+            "event": "Season Opener Speed Swim 2",
+            "time": 22.94,
+            "division": "pass",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          }
+        ]
+      },
+      "gj": {
+        "titlePts": 15,
+        "winPts": 0,
+        "personalBest": "14'",
+        "history": [
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Grab 2",
+            "best": 14,
+            "division": "Senior",
+            "placement": 5,
+            "pts": 15,
+            "win": 0
+          }
+        ]
+      },
+      "ff": {
+        "titlePts": 45,
+        "winPts": 0,
+        "personalBest": "76pts 59.02sec",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash FF1",
+            "totalPts": 63,
+            "time": 56.98,
+            "division": "Junior",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash FF2",
+            "totalPts": 76,
+            "time": 59.02,
+            "division": "Senior",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-08-12",
+            "event": "WCC",
+            "totalPts": 60,
+            "time": 50.89,
+            "division": "Vet Junior",
+            "placement": 5,
+            "pts": 15,
+            "win": 0
+          }
+        ]
+      }
+    },
+    "titlesEarned": [
+      {
+        "name": "Dock Diver",
+        "division": "Senior",
+        "date": "2023-08-11"
+      },
+      {
+        "name": "Speed Swim",
+        "division": "Novice",
+        "date": "2023-08-11"
+      },
+      {
+        "name": "Fast Fetch",
+        "division": "Junior",
+        "date": "2023-08-13"
+      }
+    ]
+  },
+  {
+    "id": "0012",
+    "name": "Lassie",
+    "dock": {
+      "lj": {
+        "titlePts": 345,
+        "winPts": 25,
+        "personalBest": "22'9\"",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Long Jump1",
+            "bestFeet": 21,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Long Jump2",
+            "bestFeet": 22,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Long Jump3",
+            "bestFeet": 22,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Long Jump4",
+            "bestFeet": 22,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2023-07-09",
+            "event": "Summer Splash Long Jump Finals",
+            "division": "Master",
+            "placement": 1,
+            "pts": 0,
+            "win": 5,
+            "finals": true
+          },
+          {
+            "date": "2023-08-11",
+            "event": "WCC Long Jump 1",
+            "bestFeet": 20,
+            "bestInches": 6,
+            "division": "Veteran Master",
+            "placement": 4,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-08-11",
+            "event": "WCC Long Jump 3",
+            "bestFeet": 21,
+            "bestInches": 9,
+            "division": "VeteranMaster",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-08-12",
+            "event": "WCC Long Jump 5",
+            "bestFeet": 21,
+            "bestInches": 0,
+            "division": "Veteran Master",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-08-13",
+            "event": "WCC Long Jump 7",
+            "bestFeet": 21,
+            "bestInches": 3,
+            "division": "Veteran Master",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-08-13",
+            "event": "WCC Long Jump Finals",
+            "division": "Master",
+            "placement": 3,
+            "pts": 0,
+            "win": 1,
+            "finals": true
+          },
+          {
+            "date": "2024-06-15",
+            "event": "Season Opener Long Jump 1",
+            "bestFeet": 20,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-06-15",
+            "event": "Season Opener Long Jump 2",
+            "bestFeet": 19,
+            "bestInches": 6,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2024-06-15",
+            "event": "Season Opener Long Jump 3",
+            "bestFeet": 21,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-06-16",
+            "event": "Season Opener Long Jump 4",
+            "bestFeet": 20,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-05",
+            "event": "Summer Splash Long Jump 1",
+            "bestFeet": 19,
+            "bestInches": 6,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2024-07-05",
+            "event": "Summer Splash Long Jump 2",
+            "bestFeet": 19,
+            "bestInches": 9,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2024-07-06",
+            "event": "Summer Splash Long Jump 5",
+            "bestFeet": 22,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 4,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-06",
+            "event": "Summer Splash Long Jump 6",
+            "bestFeet": 19,
+            "bestInches": 6,
+            "division": "Senior",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-07",
+            "event": "Summer Splash Long Jump 8",
+            "bestFeet": 18,
+            "bestInches": 3,
+            "division": "Senior",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-08-09",
+            "event": "WCC Long Jump 1",
+            "bestFeet": 21,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-08-09",
+            "event": "WCC Long Jump 4",
+            "bestFeet": 20,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-08-10",
+            "event": "WCC Long Jump 5",
+            "bestFeet": 20,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-08-10",
+            "event": "WCC Long Jump 6",
+            "bestFeet": 19,
+            "bestInches": 9,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2024-08-11",
+            "event": "WCC Long Jump 8",
+            "bestFeet": 20,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-06-14",
+            "event": "Season Opener LJ1",
+            "bestFeet": 19,
+            "bestInches": 6,
+            "division": "Senior",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-06-15",
+            "event": "Season Opener LJ4",
+            "bestFeet": 20,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-06-15",
+            "event": "Season Opener LJ5",
+            "bestFeet": 20,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2025-08-08",
+            "event": "WCC Long Jump 2",
+            "bestFeet": 18,
+            "bestInches": 3,
+            "division": "Senior",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-08-08",
+            "event": "WCC Long Jump 4",
+            "bestFeet": 19,
+            "bestInches": 3,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2025-08-09",
+            "event": "WCC Long Jump 6",
+            "bestFeet": 20,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-08-10",
+            "event": "WCC Long Jump 8",
+            "bestFeet": 18,
+            "bestInches": 6,
+            "division": "Senior",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-08-10",
+            "event": "WCC Long Jump Finals",
+            "division": "Senior",
+            "placement": 2,
+            "pts": 0,
+            "win": 3,
+            "finals": true
+          },
+          {
+            "date": "2025-09-06",
+            "event": "Eromit's Fall Finale Long Jump 1",
+            "division": "Senior",
+            "placement": 2,
+            "pts": 0,
+            "win": 0,
+            "finals": true
+          },
+          {
+            "date": "2025-09-07",
+            "event": "Eromit's Fall Finale Long Jump 4",
+            "division": "Senior",
+            "placement": 2,
+            "pts": 0,
+            "win": 0,
+            "finals": true
+          },
+          {
+            "date": "2025-09-07",
+            "event": "Eromit's Fall Finale Long Jump 5",
+            "division": "Senior",
+            "placement": 1,
+            "pts": 0,
+            "win": 2,
+            "finals": true
+          }
+        ]
+      },
+      "ss": {
+        "titlePts": 0,
+        "winPts": 0,
+        "personalBest": "6.0s",
+        "history": [
+          {
+            "date": "22'9\"",
+            "event": "16.79 18",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "Long Jump Win Points",
+            "event": "Speed Swim Win Points Grab Jump Win Points",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "1970-01-01",
+            "event": "18 6",
+            "time": 6.0,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "Long Jump Title Points",
+            "event": "Speed Swim Title Points Grab Jump Title Points",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "1970-01-01",
+            "event": "210 135",
+            "time": 120.0,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "Total Win Points",
+            "event": "",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "1970-01-01",
+            "event": "",
+            "time": 840.0,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "Title Earned",
+            "event": "Division Date",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "Dock Diver",
+            "event": "Master 2023-08-11 00:00:00",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "Speed Swim",
+            "event": "Master 2023-08-11 00:00:00",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "Grab Jump",
+            "event": "Senior 2023-08-12 00:00:00",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "Fast Fetch",
+            "event": "Senior 2023-08-13 00:00:00",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "Champion Dock Diver",
+            "event": "2023-08-13 00:00:00",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "Advanced Long Jump",
+            "event": "Master 2024-08-10 00:00:00",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "Advanced Speed Swim",
+            "event": "Master 2024-08-09 00:00:00",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "Points Required",
+            "event": "(Win points count towards titles!)",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "Basic Long Jump Title",
+            "event": "55",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "Basic FF  SS or GJ Title",
+            "event": "45",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "Champion Dock Diver Title",
+            "event": "Basic Titles in each game, 200 pts total, including 5  win points",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "Advanced Long Jump Title",
+            "event": "205",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "Advanced FF SS or GJ Title",
+            "event": "145",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "Expert Long Jump Title",
+            "event": "455",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "Expert FF SS or GJ Title",
+            "event": "345",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "Specialist Long Jump Title",
+            "event": "955",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "Specialist FF SS or GJ Title",
+            "event": "545",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "Grand Champion Dock Diver Title",
+            "event": "100 points in each game , 500 pts total, including 15 win points",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "Supreme Champion Dock Diver Title",
+            "event": "250 points in each game, 1000 pts total, including 25 win points",
+            "time": null,
+            "division": "",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          }
+        ]
+      },
+      "gj": {
+        "titlePts": 135,
+        "winPts": 6,
+        "personalBest": "18'",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Grab1",
+            "best": 17,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Grab 2",
+            "best": 18,
+            "division": "Master",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2023-08-12",
+            "event": "WCC",
+            "best": 16,
+            "division": "Senior",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-06-15",
+            "event": "Season Opener",
+            "best": 16,
+            "division": "Senior",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-07-06",
+            "event": "Summer Splash",
+            "best": 17,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2024-08-10",
+            "event": "WCC",
+            "best": 15,
+            "division": "Senior",
+            "placement": 3,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2025-06-14",
+            "event": "Season Opener",
+            "best": 16,
+            "division": "Senior",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2025-08-09",
+            "event": "WCC",
+            "best": 14,
+            "division": "Senior",
+            "placement": 3,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2025-09-06",
+            "event": "Eromit's Fall Finale",
+            "best": 15,
+            "division": "Senior",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          }
+        ]
+      },
+      "ff": {
+        "titlePts": 120,
+        "winPts": 6,
+        "personalBest": "90pts 61.61sec",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash FF1",
+            "totalPts": 76,
+            "time": 42.83,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash FF2",
+            "totalPts": 85,
+            "time": 47.11,
+            "division": "Master",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2023-08-13",
+            "event": "WCC",
+            "totalPts": 75,
+            "time": 46.6,
+            "division": "Senior",
+            "placement": 3,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-07-07",
+            "event": "Summer Splash",
+            "totalPts": 76,
+            "time": 46.59,
+            "division": "Senior Vet",
+            "placement": 4,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-08-10",
+            "event": "WCC",
+            "totalPts": 90,
+            "time": 61.61,
+            "division": "Junior",
+            "placement": 4,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2025-06-15",
+            "event": "Season Opener",
+            "totalPts": 77,
+            "time": 55.11,
+            "division": "Senior",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2025-08-10",
+            "event": "WCC",
+            "totalPts": 79,
+            "time": 52.32,
+            "division": "Senior",
+            "placement": 5,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2025-09-07",
+            "event": "Eromit's Fall Finale",
+            "totalPts": 69,
+            "time": 39.82,
+            "division": "Junior",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          }
+        ]
+      }
+    },
+    "titlesEarned": [
+      {
+        "name": "Dock Diver",
+        "division": "Master",
+        "date": "2023-08-11"
+      },
+      {
+        "name": "Speed Swim",
+        "division": "Master",
+        "date": "2023-08-11"
+      },
+      {
+        "name": "Grab Jump",
+        "division": "Senior",
+        "date": "2023-08-12"
+      },
+      {
+        "name": "Fast Fetch",
+        "division": "Senior",
+        "date": "2023-08-13"
+      },
+      {
+        "name": "Champion Dock Diver",
+        "division": "",
+        "date": "2023-08-13"
+      },
+      {
+        "name": "Advanced Long Jump",
+        "division": "Master",
+        "date": "2024-08-10"
+      },
+      {
+        "name": "Advanced Speed Swim",
+        "division": "Master",
+        "date": "2024-08-09"
+      }
+    ],
+    "timed_recall": {
+      "totalPts": 191.002982,
+      "history": [
+        {
+          "date": "2023-08-14",
+          "event": "100m",
+          "time": 9.82,
+          "speed": 36.659878,
+          "pts": 36.659878,
+          "placement": 9
+        },
+        {
+          "date": "2024-07-03",
+          "event": "Camp week TR Rd 1 100m",
+          "time": 9.29,
+          "speed": 38.751346,
+          "pts": 38.751346,
+          "placement": 1
+        },
+        {
+          "date": "2024-07-03",
+          "event": "Camp week TR Rd2 100m",
+          "time": 9.29,
+          "speed": 38.751346,
+          "pts": 38.751346,
+          "placement": 2
+        },
+        {
+          "date": "2024-07-04",
+          "event": "Camp week TR Rd3 100m",
+          "time": 9.16,
+          "speed": 39.30131,
+          "pts": 39.30131,
+          "placement": 1
+        },
+        {
+          "date": "2025-06-13",
+          "event": "Season Opener 100m",
+          "time": 9.59,
+          "speed": 37.539103,
+          "pts": 37.539103,
+          "placement": 2
+        }
+      ]
+    }
+  },
+  {
+    "id": "0013",
+    "name": "Bella",
+    "dock": {
+      "lj": {
+        "titlePts": 0,
+        "winPts": 0,
+        "personalBest": null,
+        "history": []
+      },
+      "ss": {
+        "titlePts": 0,
+        "winPts": 0,
+        "personalBest": null,
+        "history": []
+      },
+      "gj": {
+        "titlePts": 0,
+        "winPts": 0,
+        "personalBest": null,
+        "history": []
+      },
+      "ff": {
+        "titlePts": 0,
+        "winPts": 0,
+        "personalBest": null,
+        "history": []
+      }
+    },
+    "titlesEarned": [],
+    "shed": {
+      "levels": {
+        "1": {
+          "passes": 0,
+          "done": false,
+          "titleDate": null
+        },
+        "2": {
+          "passes": 0,
+          "done": false,
+          "titleDate": null
+        },
+        "3": {
+          "passes": 0,
+          "done": false,
+          "titleDate": null,
+          "locked": true
+        },
+        "4": {
+          "passes": 0,
+          "done": false,
+          "titleDate": null,
+          "locked": true
+        }
+      },
+      "tests": {
+        "locate": false,
+        "retrieve": false,
+        "seasonal": false,
+        "multiples": false
+      },
+      "winPts": 0,
+      "trialHistory": []
+    },
+    "timed_recall": {
+      "totalPts": 66.698246,
+      "history": [
+        {
+          "date": "2024-07-03",
+          "event": "Camp Week TR Rd 1 100m",
+          "time": 10.83,
+          "speed": 33.240997,
+          "pts": 33.240997,
+          "placement": 4
+        },
+        {
+          "date": "2024-07-03",
+          "event": "Camp Week TR Rd 2 100m",
+          "time": 10.76,
+          "speed": 33.457249,
+          "pts": 33.457249,
+          "placement": 3
+        }
+      ]
+    }
+  },
+  {
+    "id": "0014",
+    "name": "Couvee",
+    "dock": {
+      "lj": {
+        "titlePts": 276,
+        "winPts": 16,
+        "personalBest": "25'6\"",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Long Jump1",
+            "bestFeet": 24,
+            "bestInches": 9,
+            "division": "Elite",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Long Jump2",
+            "bestFeet": 24,
+            "bestInches": 3,
+            "division": "Elite",
+            "placement": 4,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Long Jump3",
+            "bestFeet": 24,
+            "bestInches": 9,
+            "division": "Elite",
+            "placement": 4,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Long Jump4",
+            "bestFeet": 20,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 12,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-09",
+            "event": "Summer Splash Long Jump Finals",
+            "division": "Elite",
+            "placement": 3,
+            "pts": 0,
+            "win": 1,
+            "finals": true
+          },
+          {
+            "date": "2023-08-10",
+            "event": "WCC Long Jump 1",
+            "bestFeet": 24,
+            "bestInches": 9,
+            "division": "Elite",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2023-08-11",
+            "event": "WCC Long Jump 3",
+            "bestFeet": 22,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 7,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-08-12",
+            "event": "WCC Long Jump 5",
+            "bestFeet": 23,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-08-13",
+            "event": "WCC Long Jump 7",
+            "bestFeet": 23,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2023-08-13",
+            "event": "WCC Long Jump Finals",
+            "division": "Master",
+            "placement": 4,
+            "pts": 0,
+            "win": 0,
+            "finals": true
+          },
+          {
+            "date": "2024-06-15",
+            "event": "Season Opener Long Jump 1",
+            "bestFeet": 23,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-06-15",
+            "event": "Season Opener Long Jump 2",
+            "bestFeet": 24,
+            "bestInches": 0,
+            "division": "Elite",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-06-15",
+            "event": "Season Opener Long Jump 3",
+            "bestFeet": 25,
+            "bestInches": 6,
+            "division": "Elite",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2024-07-05",
+            "event": "Summer Splash Long Jump 1",
+            "bestFeet": 24,
+            "bestInches": 6,
+            "division": "Elite",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-05",
+            "event": "Summer Splash Long Jump 3",
+            "bestFeet": 24,
+            "bestInches": 6,
+            "division": "Elite",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2024-07-06",
+            "event": "Summer Splash Long Jump 5",
+            "bestFeet": 23,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-08-09",
+            "event": "WCC Long Jump 1",
+            "bestFeet": 23,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-08-09",
+            "event": "WCC Long Jump 4",
+            "bestFeet": 20,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 20,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-08-10",
+            "event": "WCC Long Jump 5",
+            "bestFeet": 22,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 5,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-08-10",
+            "event": "WCC Long Jump 6",
+            "bestFeet": 24,
+            "bestInches": 0,
+            "division": "Elite",
+            "placement": 7,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-08-11",
+            "event": "WCC Long Jump 8",
+            "bestFeet": 23,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-08-11",
+            "event": "WCC Long Jump Finals",
+            "division": "Master",
+            "placement": 2,
+            "pts": 0,
+            "win": 3,
+            "finals": true
+          },
+          {
+            "date": "2025-06-14",
+            "event": "Season Opener LJ1",
+            "bestFeet": 23,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 4,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-06-14",
+            "event": "Season Opener LJ2",
+            "bestFeet": 24,
+            "bestInches": 6,
+            "division": "Elite",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-06-15",
+            "event": "Season Opener LJ4",
+            "bestFeet": 23,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-06-15",
+            "event": "Season Opener LJ5",
+            "bestFeet": 22,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-09-06",
+            "event": "Eromit's Fall Finale Long Jump 1",
+            "division": "Master",
+            "placement": 1,
+            "pts": 0,
+            "win": 2,
+            "finals": true
+          },
+          {
+            "date": "2025-09-07",
+            "event": "Eromit's Fall Finale Long Jump 4",
+            "division": "Master",
+            "placement": 4,
+            "pts": 0,
+            "win": 0,
+            "finals": true
+          },
+          {
+            "date": "2025-09-07",
+            "event": "Eromit's Fall Finale Long Jump 5",
+            "division": "Master",
+            "placement": 4,
+            "pts": 0,
+            "win": 0,
+            "finals": true
+          }
+        ]
+      },
+      "ss": {
+        "titlePts": 165,
+        "winPts": 4,
+        "personalBest": "16.17s",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Speed swim 1 Speed Swim 1",
+            "time": 17.61,
+            "division": "Senior",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Speed Swim 2 Speed Swim 1",
+            "time": 17.73,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2023-08-11",
+            "event": "WCC Speed Swim 1",
+            "time": 17.03,
+            "division": "Master",
+            "placement": 8,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-08-13",
+            "event": "WCC Speed Swim 2",
+            "time": 17.07,
+            "division": "Master",
+            "placement": 8,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-06-15",
+            "event": "Season Opener Speed Swim 1",
+            "time": 17.17,
+            "division": "Master",
+            "placement": 4,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-07-05",
+            "event": "Summer Splash Speed Swim 1",
+            "time": 16.17,
+            "division": "Master",
+            "placement": 4,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-07-07",
+            "event": "Summer Splash Speed Swim 2",
+            "time": 16.63,
+            "division": "Master",
+            "placement": 6,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-08-09",
+            "event": "WCC Speed Swim 1",
+            "time": 16.74,
+            "division": "Master",
+            "placement": 6,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-08-11",
+            "event": "WCC Speed Swim 2",
+            "time": 16.72,
+            "division": "Master",
+            "placement": 3,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2025-06-14",
+            "event": "Season Opener Speed Swim 1",
+            "time": 18.03,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2025-09-06",
+            "event": "Eromit's Fall Finale Speed Swim 1",
+            "time": 17.41,
+            "division": "Master",
+            "placement": 6,
+            "pts": 15,
+            "win": 0
+          }
+        ]
+      },
+      "gj": {
+        "titlePts": 105,
+        "winPts": 0,
+        "personalBest": "19'",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Grab1",
+            "best": 19,
+            "division": "Master",
+            "placement": 4,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Grab 2",
+            "best": 18,
+            "division": "Master",
+            "placement": 6,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-08-12",
+            "event": "WCC",
+            "best": 19,
+            "division": "Master",
+            "placement": 5,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-06-15",
+            "event": "Season Opener",
+            "best": 18,
+            "division": "Master",
+            "placement": 4,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-07-06",
+            "event": "Summer Splash",
+            "best": 19,
+            "division": "Master",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-08-10",
+            "event": "WCC",
+            "best": 18,
+            "division": "Master",
+            "placement": 7,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2025-06-14",
+            "event": "Season Opener",
+            "best": 18,
+            "division": "Master",
+            "placement": 4,
+            "pts": 15,
+            "win": 0
+          }
+        ]
+      },
+      "ff": {
+        "titlePts": 90,
+        "winPts": 2,
+        "personalBest": "102pts 60.49sec",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash FF1",
+            "totalPts": 68,
+            "time": 41.32,
+            "division": "Junior",
+            "placement": 3,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash FF2",
+            "totalPts": 60,
+            "time": 42.02,
+            "division": "Junior",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2023-08-13",
+            "event": "WCC",
+            "totalPts": 69,
+            "time": 40.14,
+            "division": "Junior",
+            "placement": 3,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-07-07",
+            "event": "Summer Splash",
+            "totalPts": 102,
+            "time": 60.49,
+            "division": "Junior",
+            "placement": 6,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-08-11",
+            "event": "WCC",
+            "totalPts": 79,
+            "time": 51.49,
+            "division": "Senior",
+            "placement": 4,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2025-09-07",
+            "event": "Eromit's Fall Finale",
+            "totalPts": 92,
+            "time": 64.21,
+            "division": "Junior",
+            "placement": 7,
+            "pts": 15,
+            "win": 0
+          }
+        ]
+      }
+    },
+    "titlesEarned": [
+      {
+        "name": "Dock Diver - Long Jump",
+        "division": "Master",
+        "date": "2023-08-11"
+      },
+      {
+        "name": "Speed Swim",
+        "division": "Master",
+        "date": "2023-08-11"
+      },
+      {
+        "name": "Grab Jump",
+        "division": "Master",
+        "date": "2023-08-12"
+      },
+      {
+        "name": "Fast Fetch",
+        "division": "Junior",
+        "date": "2023-08-13"
+      },
+      {
+        "name": "Champion Dock Diver",
+        "division": "",
+        "date": "2023-08-13"
+      },
+      {
+        "name": "Advanced Speed Swim",
+        "division": "Master",
+        "date": "2025-06-14"
+      },
+      {
+        "name": "Advanced Long Jump",
+        "division": "Master",
+        "date": "2025-06-14"
+      }
+    ],
+    "shed": {
+      "levels": {
+        "1": {
+          "passes": 4,
+          "done": true,
+          "titleDate": "2025-06-13"
+        },
+        "2": {
+          "passes": 0,
+          "done": false,
+          "titleDate": null
+        },
+        "3": {
+          "passes": 0,
+          "done": false,
+          "titleDate": null,
+          "locked": true
+        },
+        "4": {
+          "passes": 0,
+          "done": false,
+          "titleDate": null,
+          "locked": true
+        }
+      },
+      "tests": {
+        "locate": false,
+        "retrieve": false,
+        "seasonal": false,
+        "multiples": false
+      },
+      "winPts": 3,
+      "trialHistory": [
+        {
+          "date": "2024-06-14",
+          "event": "Season Opener",
+          "level": 1,
+          "time": "1:01.16",
+          "qualifying": "Y",
+          "placement": "5",
+          "winPts": 0
+        },
+        {
+          "date": "2024-06-14",
+          "event": "Season Opener",
+          "level": 1,
+          "time": null,
+          "qualifying": "NQ",
+          "placement": "—",
+          "winPts": 0
+        },
+        {
+          "date": "2024-06-14",
+          "event": "Season Opener",
+          "level": 1,
+          "time": "37.88s",
+          "qualifying": "Y",
+          "placement": "4",
+          "winPts": 0
+        },
+        {
+          "date": "2025-06-13",
+          "event": "Season Opener",
+          "level": 1,
+          "time": "1:17.7",
+          "qualifying": "Y",
+          "placement": "5",
+          "winPts": 0
+        },
+        {
+          "date": "2025-06-13",
+          "event": "Season Opener",
+          "level": 1,
+          "time": "1:00.66",
+          "qualifying": "Y",
+          "placement": "4",
+          "winPts": 0
+        },
+        {
+          "date": "2025-06-13",
+          "event": "Season Opener",
+          "level": 1,
+          "time": "0:38.9",
+          "qualifying": "Y",
+          "placement": "1",
+          "winPts": 2
+        },
+        {
+          "date": "2025-06-13",
+          "event": "Season Opener",
+          "level": 1,
+          "time": "1:53.84",
+          "qualifying": "Y",
+          "placement": "5",
+          "winPts": 0
+        },
+        {
+          "date": "2025-09-05",
+          "event": "Eromit Fall Finale",
+          "level": 1,
+          "time": "1:09.64",
+          "qualifying": "Y",
+          "placement": "6",
+          "winPts": 0
+        },
+        {
+          "date": "2025-09-05",
+          "event": "Eromit's Fall Finale",
+          "level": 1,
+          "time": "25.65s",
+          "qualifying": "Y",
+          "placement": "2",
+          "winPts": 1
+        },
+        {
+          "date": "2025-09-05",
+          "event": "Eromit's Fall Finale",
+          "level": 2,
+          "time": "1:40.42",
+          "qualifying": "NQ",
+          "placement": "—",
+          "winPts": 0
+        },
+        {
+          "date": "2025-09-05",
+          "event": "Eromit's Fall Finale",
+          "level": 2,
+          "time": "1:31.01",
+          "qualifying": "NQ",
+          "placement": "—",
+          "winPts": 0
+        }
+      ]
+    },
+    "timed_recall": {
+      "totalPts": 279.736234,
+      "history": [
+        {
+          "date": "2023-08-14",
+          "event": "100m",
+          "time": 9.06,
+          "speed": 39.735099,
+          "pts": 39.735099,
+          "placement": 4
+        },
+        {
+          "date": "2024-07-03",
+          "event": "Camp week TR Rd 1 100m",
+          "time": 8.87,
+          "speed": 40.586246,
+          "pts": 40.586246,
+          "placement": 4
+        },
+        {
+          "date": "2024-07-03",
+          "event": "Camp week TR Rd2 100m",
+          "time": 8.75,
+          "speed": 41.142857,
+          "pts": 41.142857,
+          "placement": 2
+        },
+        {
+          "date": "2024-07-04",
+          "event": "Camp week TR Rd 3 100m",
+          "time": 8.83,
+          "speed": 40.770102,
+          "pts": 40.770102,
+          "placement": 2
+        },
+        {
+          "date": "2025-06-13",
+          "event": "Season Opener 100m",
+          "time": 9.02,
+          "speed": 39.911308,
+          "pts": 39.911308,
+          "placement": 9
+        },
+        {
+          "date": "2025-09-05",
+          "event": "Eromit Fall Finale 100m",
+          "time": 9.21,
+          "speed": 39.087948,
+          "pts": 39.087948,
+          "placement": 6
+        },
+        {
+          "date": "2025-09-05",
+          "event": "Eromit Fall Finale 100m",
+          "time": 9.35,
+          "speed": 38.502674,
+          "pts": 38.502674,
+          "placement": 6
+        }
+      ]
+    }
+  },
+  {
+    "id": "0015",
+    "name": "Vibe",
+    "dock": {
+      "lj": {
+        "titlePts": 140,
+        "winPts": 0,
+        "personalBest": "22'9\"",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Long Jump1",
+            "bestFeet": 19,
+            "bestInches": 3,
+            "division": "Senior",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Long Jump2",
+            "bestFeet": 20,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 11,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Long Jump3",
+            "bestFeet": 20,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 11,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Long Jump4",
+            "bestFeet": 20,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 14,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Long Jump5",
+            "bestFeet": 15,
+            "bestInches": 9,
+            "division": "Senior",
+            "placement": 6,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-09",
+            "event": "Summer Splash Long Jump6",
+            "bestFeet": 18,
+            "bestInches": 9,
+            "division": "Senior",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-05",
+            "event": "Summer Splash Long Jump 1",
+            "bestFeet": 20,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 9,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-05",
+            "event": "Summer Splash Long Jump 2",
+            "bestFeet": 21,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 6,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-05",
+            "event": "Summer Splash Long Jump 3",
+            "bestFeet": 19,
+            "bestInches": 3,
+            "division": "Senior",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-06",
+            "event": "Summer Splash Long Jump 5",
+            "bestFeet": 22,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 5,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-06",
+            "event": "Summer Splash Long Jump 6",
+            "bestFeet": 19,
+            "bestInches": 9,
+            "division": "Senior",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-06",
+            "event": "Summer Splash Long Jump 7",
+            "bestFeet": 20,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 8,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-07",
+            "event": "Summer Splash Long Jump 8",
+            "bestFeet": 20,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 11,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-07",
+            "event": "Summer Splash Long Jump 9",
+            "bestFeet": 20,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 7,
+            "pts": 10,
+            "win": 0
+          }
+        ]
+      },
+      "ss": {
+        "titlePts": 60,
+        "winPts": 4,
+        "personalBest": "17.24s",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash SpeedSwim1",
+            "time": 17.59,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash SpeedSwim2",
+            "time": 18.21,
+            "division": "Senior",
+            "placement": 6,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-07-05",
+            "event": "Summer Splash Speed Swim 1",
+            "time": 17.24,
+            "division": "Master",
+            "placement": 7,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-07-07",
+            "event": "Summer Splash Speed Swim 2",
+            "time": 17.76,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          }
+        ]
+      },
+      "gj": {
+        "titlePts": 45,
+        "winPts": 2,
+        "personalBest": "17'",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Grab1",
+            "best": 10,
+            "division": "Junior",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Grab 2",
+            "best": 12,
+            "division": "Junior",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-07-06",
+            "event": "Summer Splash",
+            "best": 17,
+            "division": "Senior",
+            "placement": 3,
+            "pts": 15,
+            "win": 0
+          }
+        ]
+      },
+      "ff": {
+        "titlePts": 45,
+        "winPts": 2,
+        "personalBest": "92pts 51.27sec",
+        "history": [
+          {
+            "date": "2023-07-09",
+            "event": "Summer Splash FF1",
+            "totalPts": 84,
+            "time": 54.62,
+            "division": "Master",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2023-07-10",
+            "event": "Summer Splash FF2",
+            "totalPts": 75,
+            "time": 51.3,
+            "division": "Senior",
+            "placement": 5,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-07-07",
+            "event": "Summer Splash",
+            "totalPts": 92,
+            "time": 51.27,
+            "division": "Elite",
+            "placement": 3,
+            "pts": 15,
+            "win": 0
+          }
+        ]
+      }
+    },
+    "titlesEarned": [
+      {
+        "name": "Dock Diver",
+        "division": "Senior",
+        "date": "2023-07-09"
+      },
+      {
+        "name": "Speed Swim",
+        "division": "Senior",
+        "date": "2024-07-07"
+      },
+      {
+        "name": "Grab Jump",
+        "division": "Junior",
+        "date": "2024-07-06"
+      },
+      {
+        "name": "Fast Fetch",
+        "division": "Master",
+        "date": "2024-07-07"
+      },
+      {
+        "name": "Champion Dock Diver",
+        "division": "",
+        "date": "2024-07-07"
+      }
+    ],
+    "timed_recall": {
+      "totalPts": 73.4324,
+      "history": [
+        {
+          "date": "2024-07-03",
+          "event": "Camp Week TR Rd 1 100m",
+          "time": 9.78,
+          "speed": 36.809816,
+          "pts": 36.809816,
+          "placement": 11
+        },
+        {
+          "date": "2024-07-03",
+          "event": "Camp Week TR Rd 2 100m",
+          "time": 9.83,
+          "speed": 36.622584,
+          "pts": 36.622584,
+          "placement": 15
+        }
+      ]
+    }
+  },
+  {
+    "id": "0016",
+    "name": "Finn",
+    "dock": {
+      "lj": {
+        "titlePts": 151,
+        "winPts": 11,
+        "personalBest": "24'6\"",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Long Jump1",
+            "bestFeet": 24,
+            "bestInches": 6,
+            "division": "Elite",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Long Jump2",
+            "bestFeet": 23,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Long Jump3",
+            "bestFeet": 23,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Long Jump4",
+            "bestFeet": 22,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 5,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Long Jump5",
+            "bestFeet": 21,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 8,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-09",
+            "event": "Summer Splash Long Jump6",
+            "bestFeet": 22,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 5,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-09",
+            "event": "Summer Splash Long Jump Finals",
+            "division": "Mastser",
+            "placement": 1,
+            "pts": 0,
+            "win": 5,
+            "finals": true
+          },
+          {
+            "date": "2024-06-15",
+            "event": "SeasonOpener LongJump 2",
+            "bestFeet": 22,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2024-06-15",
+            "event": "SeasonOpener LongJump 3",
+            "bestFeet": 21,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 4,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-06-16",
+            "event": "SeasonOpener LongJump 4",
+            "bestFeet": 22,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-06-16",
+            "event": "SeasonOpener LongJump 5",
+            "bestFeet": 22,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-08-08",
+            "event": "WCC Long Jump 2",
+            "bestFeet": 22,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2025-08-08",
+            "event": "WCC Long Jump 3",
+            "bestFeet": 22,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-08-09",
+            "event": "WCC Long Jump 5",
+            "bestFeet": 20,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-08-09",
+            "event": "WCC Long Jump 6",
+            "bestFeet": 21,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          }
+        ]
+      },
+      "ss": {
+        "titlePts": 60,
+        "winPts": 2,
+        "personalBest": "16.92s",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash SpeedSwim1",
+            "time": 16.92,
+            "division": "Master",
+            "placement": 7,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash SpeedSwim2",
+            "time": 16.92,
+            "division": "Master",
+            "placement": 6,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-06-16",
+            "event": "Season Opener Speed Swim 2",
+            "time": 17.12,
+            "division": "Master",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2025-08-08",
+            "event": "WCC - SS1",
+            "time": 19.16,
+            "division": "Senior",
+            "placement": 6,
+            "pts": 15,
+            "win": 0
+          }
+        ]
+      },
+      "gj": {
+        "titlePts": 60,
+        "winPts": 0,
+        "personalBest": "15'",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Grab1",
+            "best": 14,
+            "division": "Senior",
+            "placement": 7,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Grab 2",
+            "best": 15,
+            "division": "Senior",
+            "placement": 5,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-06-15",
+            "event": "",
+            "best": 14,
+            "division": "Senior",
+            "placement": 4,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2025-08-09",
+            "event": "WCC",
+            "best": 13,
+            "division": "Junior",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          }
+        ]
+      },
+      "ff": {
+        "titlePts": 30,
+        "winPts": 0,
+        "personalBest": "73pts 65.59sec",
+        "history": [
+          {
+            "date": "2023-07-09",
+            "event": "Summer Splash FF1",
+            "totalPts": 63,
+            "time": 50.73,
+            "division": "Junior",
+            "placement": 7,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-07-10",
+            "event": "Summer Splash FF2",
+            "totalPts": 73,
+            "time": 65.59,
+            "division": "Junior",
+            "placement": 8,
+            "pts": 15,
+            "win": 0
+          }
+        ]
+      }
+    },
+    "titlesEarned": [
+      {
+        "name": "Dock Diver",
+        "division": "Master",
+        "date": "2023-07-09"
+      },
+      {
+        "name": "Grab Jump",
+        "division": "Senior",
+        "date": "2024-06-16"
+      },
+      {
+        "name": "Speed Swim",
+        "division": "Master",
+        "date": "2024-06-16"
+      }
+    ]
+  },
+  {
+    "id": "0017",
+    "name": "Spice",
+    "dock": {
+      "lj": {
+        "titlePts": 112,
+        "winPts": 2,
+        "personalBest": "17'6\"",
+        "history": [
+          {
+            "date": "2023-07-09",
+            "event": "Summer Splash Long Jump6",
+            "bestFeet": 17,
+            "bestInches": 3,
+            "division": "Senior",
+            "placement": 6,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-08-11",
+            "event": "WCC Long Jump 1",
+            "bestFeet": 17,
+            "bestInches": 6,
+            "division": "Senior",
+            "placement": 7,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-08-11",
+            "event": "WCC Long Jump 2",
+            "bestFeet": 17,
+            "bestInches": 6,
+            "division": "Senior",
+            "placement": 10,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-08-12",
+            "event": "WCC Long Jump 4",
+            "bestFeet": 16,
+            "bestInches": 3,
+            "division": "Senior",
+            "placement": 7,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-08-12",
+            "event": "WCC Long Jump 6",
+            "bestFeet": 16,
+            "bestInches": 3,
+            "division": "Senior",
+            "placement": 12,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-08-13",
+            "event": "WCC Long Jump Finals",
+            "division": "Senior",
+            "placement": 6,
+            "pts": 0,
+            "win": 0,
+            "finals": true
+          },
+          {
+            "date": "2024-08-10",
+            "event": "WCC Long Jump 6",
+            "bestFeet": 17,
+            "bestInches": 3,
+            "division": "VET-S",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-08-11",
+            "event": "WCC Long Jump 8",
+            "bestFeet": 17,
+            "bestInches": 6,
+            "division": "vet-S",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-08-09",
+            "event": "WCC Long Jump 5",
+            "bestFeet": 15,
+            "bestInches": 6,
+            "division": "Senior",
+            "placement": 8,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-08-09",
+            "event": "WCC Long Jump 6",
+            "bestFeet": 13,
+            "bestInches": 6,
+            "division": "Junior",
+            "placement": 2,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-08-09",
+            "event": "WCC Long Jump 7",
+            "bestFeet": 14,
+            "bestInches": 9,
+            "division": "Junior",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2025-08-10",
+            "event": "WCC Long Jump 8",
+            "bestFeet": 15,
+            "bestInches": 6,
+            "division": "Senior",
+            "placement": 5,
+            "pts": 10,
+            "win": 0
+          }
+        ]
+      },
+      "ss": {
+        "titlePts": 0,
+        "winPts": 0,
+        "personalBest": null,
+        "history": []
+      },
+      "gj": {
+        "titlePts": 0,
+        "winPts": 0,
+        "personalBest": null,
+        "history": []
+      },
+      "ff": {
+        "titlePts": 0,
+        "winPts": 0,
+        "personalBest": null,
+        "history": []
+      }
+    },
+    "titlesEarned": [
+      {
+        "name": "Long Jump",
+        "division": "Senior",
+        "date": "2024-08-10"
+      }
+    ]
+  },
+  {
+    "id": "0019",
+    "name": "Minniemouse",
+    "dock": {
+      "lj": {
+        "titlePts": 378,
+        "winPts": 4,
+        "personalBest": "23'6\"",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Long Jump1",
+            "bestFeet": 20,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 8,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Long Jump2",
+            "bestFeet": 23,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 1,
+            "pts": 10,
+            "win": 2
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Long Jump3",
+            "bestFeet": 22,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 6,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Long Jump4",
+            "bestFeet": 22,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 4,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Long Jump5",
+            "bestFeet": 21,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 9,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-09",
+            "event": "Summer Splash Long Jump6",
+            "bestFeet": 21,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 9,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-07-09",
+            "event": "Summer Splash Long Jump Finals",
+            "division": "Master",
+            "placement": 4,
+            "pts": 0,
+            "win": 0,
+            "finals": true
+          },
+          {
+            "date": "2023-08-11",
+            "event": "WCC Long Jump 1",
+            "bestFeet": 23,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 5,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-08-11",
+            "event": "WCC Long Jump 2",
+            "bestFeet": 22,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 4,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-08-11",
+            "event": "WCC Long Jump 3",
+            "bestFeet": 22,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 9,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-08-12",
+            "event": "WCC Long Jump 4",
+            "bestFeet": 22,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 4,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-08-12",
+            "event": "WCC Long Jump 5",
+            "bestFeet": 22,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 7,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-08-12",
+            "event": "WCC Long Jump 6",
+            "bestFeet": 22,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2023-08-13",
+            "event": "WCC Long Jump 7",
+            "bestFeet": 22,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 4,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-06-15",
+            "event": "Season Opener LongJump 1",
+            "bestFeet": 20,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 9,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-06-15",
+            "event": "Season Opener LongJump 2",
+            "bestFeet": 22,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 4,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-06-15",
+            "event": "Season Opener LongJump 3",
+            "bestFeet": 20,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 6,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-06-16",
+            "event": "Season Opener LongJump 4",
+            "bestFeet": 21,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 6,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-06-16",
+            "event": "Season Opener LongJump 5",
+            "bestFeet": 20,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 7,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-05",
+            "event": "Summer Splash Long Jump 1",
+            "bestFeet": 21,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 7,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-05",
+            "event": "Summer Splash Long Jump 2",
+            "bestFeet": 20,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 9,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-05",
+            "event": "Summer Splash Long Jump 3",
+            "bestFeet": 20,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 5,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-05",
+            "event": "Summer Splash Long Jump 4",
+            "bestFeet": 20,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 10,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-06",
+            "event": "Summer Splash Long Jump 5",
+            "bestFeet": 21,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 11,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-06",
+            "event": "Summer Splash Long Jump 6",
+            "bestFeet": 20,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 8,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-07",
+            "event": "Summer Splash Long Jump 8",
+            "bestFeet": 21,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 8,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2024-07-07",
+            "event": "Summer Splash Long Jump 9",
+            "bestFeet": 20,
+            "bestInches": 3,
+            "division": "Master",
+            "placement": 8,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-06-15",
+            "event": "Season Opener LJ4",
+            "bestFeet": 21,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 3,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-06-15",
+            "event": "Season Opener LJ5",
+            "bestFeet": 20,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 5,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-06-15",
+            "event": "Season Opener LJ6",
+            "bestFeet": 20,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 6,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-08-08",
+            "event": "WCC Long Jump 1",
+            "bestFeet": 20,
+            "bestInches": 0,
+            "division": "Master",
+            "placement": 14,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-08-08",
+            "event": "WCC Long Jump 4",
+            "bestFeet": 20,
+            "bestInches": 6,
+            "division": "Master",
+            "placement": 5,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-08-09",
+            "event": "WCC Long Jump 5",
+            "bestFeet": 20,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 9,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-08-09",
+            "event": "WCC Long Jump 7",
+            "bestFeet": 20,
+            "bestInches": 9,
+            "division": "Master",
+            "placement": 8,
+            "pts": 10,
+            "win": 0
+          },
+          {
+            "date": "2025-09-06",
+            "event": "Eromit's Fall Finale Long Jump 1",
+            "division": "Senior",
+            "placement": 1,
+            "pts": 0,
+            "win": 2,
+            "finals": true
+          },
+          {
+            "date": "2025-09-06",
+            "event": "Eromit's Fall Finale Long Jump 2",
+            "division": "Senior",
+            "placement": 7,
+            "pts": 0,
+            "win": 0,
+            "finals": true
+          },
+          {
+            "date": "2025-09-07",
+            "event": "Eromit's Fall Finale Long Jump 5",
+            "division": "Senior",
+            "placement": 3,
+            "pts": 0,
+            "win": 0,
+            "finals": true
+          },
+          {
+            "date": "2025-09-07",
+            "event": "Eromit's Fall Finale Long Jump 6",
+            "division": "Senior",
+            "placement": 2,
+            "pts": 0,
+            "win": 0,
+            "finals": true
+          }
+        ]
+      },
+      "ss": {
+        "titlePts": 165,
+        "winPts": 2,
+        "personalBest": "15.75s",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash Speed Swim1",
+            "time": 16.52,
+            "division": "Master",
+            "placement": 5,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash Speed Swim2",
+            "time": 16.65,
+            "division": "Master",
+            "placement": 5,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-08-11",
+            "event": "WCC Speed Swim 1",
+            "time": 15.99,
+            "division": "Master",
+            "placement": 5,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-08-13",
+            "event": "WCC Speed Swim 2",
+            "time": 16.03,
+            "division": "Master",
+            "placement": 3,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-06-15",
+            "event": "Season Opener Speed Swim 1",
+            "time": 16.22,
+            "division": "Master",
+            "placement": 3,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-06-16",
+            "event": "Season Opener Speed Swim 2",
+            "time": 16.15,
+            "division": "Master",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2024-07-05",
+            "event": "Summer Splash Speed Swim 1",
+            "time": 15.75,
+            "division": "Master",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-07-07",
+            "event": "Summer Splash Speed Swim 2",
+            "time": 16.26,
+            "division": "Master",
+            "placement": 4,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2025-08-08",
+            "event": "WCC - SS1",
+            "time": 16.09,
+            "division": "Master",
+            "placement": 3,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2025-08-10",
+            "event": "WCC-SS2",
+            "time": 17.34,
+            "division": "Master",
+            "placement": 7,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2025-09-06",
+            "event": "Eromit's Fall Finale Speed Swim 1",
+            "time": 16.65,
+            "division": "Master",
+            "placement": 4,
+            "pts": 15,
+            "win": 0
+          }
+        ]
+      },
+      "gj": {
+        "titlePts": 105,
+        "winPts": 10,
+        "personalBest": "21'",
+        "history": [
+          {
+            "date": "2023-07-07",
+            "event": "Summer Splash GJ1",
+            "best": 21,
+            "division": "Master",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2023-07-08",
+            "event": "Summer Splash GJ2",
+            "best": 20,
+            "division": "Master",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2023-08-12",
+            "event": "WCC",
+            "best": 20,
+            "division": "Master",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-06-15",
+            "event": "Season Opener",
+            "best": 19,
+            "division": "Master",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2024-07-06",
+            "event": "Summer Splash",
+            "best": 20,
+            "division": "Master",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2025-08-09",
+            "event": "WCC",
+            "best": 17,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2025-09-06",
+            "event": "Eromit's Fall Finale",
+            "best": 17,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          }
+        ]
+      },
+      "ff": {
+        "titlePts": 105,
+        "winPts": 8,
+        "personalBest": "79pts 42.99sec",
+        "history": [
+          {
+            "date": "2023-07-09",
+            "event": "Summer Splash FF1",
+            "totalPts": 79,
+            "time": 42.99,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2023-07-09",
+            "event": "Summer Splash FF2",
+            "totalPts": 74,
+            "time": 38.98,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2023-08-13",
+            "event": "WCC",
+            "totalPts": 74,
+            "time": 37.5,
+            "division": "Senior",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2024-06-16",
+            "event": "Season Opener",
+            "totalPts": 77,
+            "time": 41.29,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2024-07-07",
+            "event": "Summer Splash",
+            "totalPts": 74,
+            "time": 37.02,
+            "division": "Senior",
+            "placement": 1,
+            "pts": 15,
+            "win": 2
+          },
+          {
+            "date": "2025-06-15",
+            "event": "Season Opener",
+            "totalPts": 57,
+            "time": 52.25,
+            "division": "NQ",
+            "placement": null,
+            "pts": 0,
+            "win": 0
+          },
+          {
+            "date": "2025-08-10",
+            "event": "WCC",
+            "totalPts": 62,
+            "time": 32.28,
+            "division": "Junior",
+            "placement": 2,
+            "pts": 15,
+            "win": 0
+          },
+          {
+            "date": "2025-09-07",
+            "event": "Eromit's Fall Finale",
+            "totalPts": 61,
+            "time": 64.17,
+            "division": "Junior",
+            "placement": 6,
+            "pts": 15,
+            "win": 0
+          }
+        ]
+      }
+    },
+    "titlesEarned": [
+      {
+        "name": "Dock Diver",
+        "division": "Master",
+        "date": "2023-07-09"
+      },
+      {
+        "name": "Speed Swim",
+        "division": "Master",
+        "date": "2023-08-11"
+      },
+      {
+        "name": "Grab Jump",
+        "division": "Master",
+        "date": "2023-08-12"
+      },
+      {
+        "name": "Fast Fetch",
+        "division": "Senior",
+        "date": "2023-08-13"
+      },
+      {
+        "name": "Champion Dock Diver",
+        "division": "",
+        "date": "2023-08-13"
+      },
+      {
+        "name": "Advanced Dock Diver",
+        "division": "Master",
+        "date": "2024-07-05"
+      },
+      {
+        "name": "Speed Swim Advanced",
+        "division": "Master",
+        "date": "2025-08-10"
+      },
+      {
+        "name": "Grand Champion Dock Diver",
+        "division": "",
+        "date": "2025-09-07"
+      }
+    ],
+    "timed_recall": {
+      "totalPts": 191.210363,
+      "history": [
+        {
+          "date": "2024-07-03",
+          "event": "Camp week TR Rd 1 100m",
+          "time": 8.91,
+          "speed": 40.40404,
+          "pts": 40.40404,
+          "placement": 5
+        },
+        {
+          "date": "2024-07-03",
+          "event": "Camp week TR Rd2 100m",
+          "time": 9.14,
+          "speed": 39.387309,
+          "pts": 39.387309,
+          "placement": 5
+        },
+        {
+          "date": "2025-06-12",
+          "event": "Season Opener 100m",
+          "time": 9.49,
+          "speed": 37.934668,
+          "pts": 37.934668,
+          "placement": 9
+        },
+        {
+          "date": "2025-09-05",
+          "event": "Eromit Fall Finale 100m",
+          "time": 9.31,
+          "speed": 38.668099,
+          "pts": 38.668099,
+          "placement": 7
+        },
+        {
+          "date": "2025-09-05",
+          "event": "Eromit Fall Finale 100m",
+          "time": 10.34,
+          "speed": 34.816248,
+          "pts": 34.816248,
+          "placement": 8
+        }
+      ]
+    }
   }
 ]
