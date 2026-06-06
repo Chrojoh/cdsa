@@ -440,7 +440,7 @@ function renderDockSection(dog) {
   return `<div class="sport-section">
     <div class="sport-header">
       <div class="sport-title-group">
-        <span class="sport-name">🏊 Dock Diving</span>
+        <span class="sport-name"> Dock Diving</span>
         <a class="sport-rules-link" href="${RULES_LINKS.dock}" target="_blank" rel="noopener">Official Rules</a>
       </div>
       <span class="sport-pts">${totalPts} pts · ${totalWin} wins</span>
@@ -491,7 +491,7 @@ function renderShedSection(dog) {
   return `<div class="sport-section">
     <div class="sport-header">
       <div class="sport-title-group">
-        <span class="sport-name">🦌 Shed Antler</span>
+        <span class="sport-name"> Shed Antler</span>
         <a class="sport-rules-link" href="${RULES_LINKS.shed}" target="_blank" rel="noopener">Official Rules</a>
       </div>
       <span class="sport-pts">${s.winPts||0} win pts</span>
@@ -547,7 +547,7 @@ function renderTimedRecall(dog) {
   return `<div class="sport-section">
     <div class="sport-header">
       <div class="sport-title-group">
-        <span class="sport-name">⚡ Timed Recall</span>
+        <span class="sport-name"> Timed Recall</span>
         <a class="sport-rules-link" href="${RULES_LINKS.timedrecall}" target="_blank" rel="noopener">Official Rules</a>
       </div>
       <span class="sport-pts">${tr.totalPts.toFixed(1)} pts</span>
@@ -577,9 +577,9 @@ const activeTabs = {};
 
 function renderTabs(dog) {
   const tabs = [];
-  if (dog.dock) tabs.push({key:'dock', label:'🏊 Dock'});
-  if (dog.shed) tabs.push({key:'shed', label:'🦌 Shed'});
-  if (dog.timed_recall) tabs.push({key:'tr', label:'⚡ Recall'});
+  if (dog.dock) tabs.push({key:'dock', label:'Dock'});
+  if (dog.shed) tabs.push({key:'shed', label:'Shed'});
+  if (dog.timed_recall) tabs.push({key:'tr', label:'Recall'});
   if (!tabs.length) return '<p style="padding:16px;color:var(--muted);font-size:13px;">No data recorded yet.</p>';
 
   const active = activeTabs[dog.id] || tabs[0].key;
