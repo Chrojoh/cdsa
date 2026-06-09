@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NDS Title Tracker</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b1520;
+  --surface:#111d2b;
+  --surface2:#162233;
+  --border:#1e3048;
+  --border2:#2a4060;
+  --text:#dde8f4;
+  --muted:#7090b0;
+  --faint:#354a62;
+  --water:#38bdf8;
+  --blue:#3b82f6;
+  --navy:#1d4ed8;
+  --cyan:#06b6d4;
+  --gold:#f59e0b;
+  --gold2:#fbbf24;
+  --green:#22c55e;
+  --green2:#166534;
+  --red:#f87171;
+  --purple:#a78bfa;
+  --orange:#fb923c;
+  /* sport colours */
+  --lj:#3b82f6; --ss:#06b6d4; --gj:#22c55e; --ff:#f59e0b;
+  --sa:#a78bfa; --tr:#fb923c;
+  --r:6px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.5;min-height:100vh;}
+
+/* ── HEADER ──────────────────────── */
+header{
+  background:var(--surface);
+  border-bottom:2px solid var(--border2);
+  position:sticky;top:0;z-index:200;
+  box-shadow:0 2px 16px rgba(0,0,0,.4);
+}
+.hdr{max-width:1100px;margin:0 auto;padding:12px 18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+.logo{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;letter-spacing:.08em;color:var(--water);line-height:1;white-space:nowrap;}
+.logo small{display:block;font-family:'DM Sans',sans-serif;font-size:.52rem;font-weight:500;letter-spacing:.15em;color:var(--muted);text-transform:uppercase;margin-top:1px;}
+
+.search-wrap{position:relative;flex:1;min-width:200px;max-width:400px;}
+.search-wrap input{
+  width:100%;padding:9px 14px 9px 38px;
+  background:var(--bg);border:1.5px solid var(--border2);
+  border-radius:var(--r);color:var(--text);
+  font-family:'DM Sans',sans-serif;font-size:.9rem;outline:none;
+  transition:border-color .18s;
+}
+.search-wrap input:focus{border-color:var(--blue);}
+.search-wrap input::placeholder{color:var(--faint);}
+.search-wrap::before{content:'⌕';position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--faint);font-size:1.1rem;pointer-events:none;}
+.sport-filters{display:flex;gap:5px;flex-wrap:wrap;}
+.sf{padding:5px 11px;border-radius:20px;border:1.5px solid var(--border2);background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;font-size:.75rem;font-weight:600;cursor:pointer;transition:all .15s;white-space:nowrap;}
+.sf:hover{border-color:var(--blue);color:var(--text);}
+.sf.active{border-color:var(--blue);background:var(--navy);color:#fff;}
+.hdr-count{font-size:.8rem;color:var(--muted);margin-left:auto;white-space:nowrap;}
+#dogCount{color:var(--water);font-weight:600;}
+
+/* loading bar */
+.load-bar{height:3px;background:var(--border);overflow:hidden;}
+.load-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--blue),var(--water));transition:width .4s;}
+
+/* ── MAIN ──────────────────────── */
+main{max-width:1100px;margin:0 auto;padding:20px 18px 60px;}
+#status{text-align:center;padding:40px;color:var(--muted);font-size:.9rem;}
+.spin{display:inline-block;width:16px;height:16px;border:2px solid var(--border2);border-top-color:var(--blue);border-radius:50%;animation:sp .7s linear infinite;vertical-align:middle;margin-right:8px;}
+@keyframes sp{to{transform:rotate(360deg)}}
+
+.dog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px;}
+
+/* ── DOG CARD ──────────────────── */
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  overflow:hidden;
+  transition:border-color .18s,box-shadow .18s;
+}
+.card:hover{border-color:var(--border2);box-shadow:0 4px 20px rgba(0,0,0,.3);}
+
+.card-head{
+  padding:11px 14px 9px;
+  background:linear-gradient(135deg,var(--surface2),var(--surface));
+  border-bottom:1px solid var(--border);
+  cursor:pointer;
+  display:flex;align-items:flex-start;justify-content:space-between;gap:8px;
+  user-select:none;
+}
+.card-head:hover{background:var(--surface2);}
+.dog-name{font-family:'Bebas Neue',sans-serif;font-size:1.35rem;letter-spacing:.06em;color:var(--text);line-height:1.1;}
+.dog-id{font-family:'DM Mono',monospace;font-size:.68rem;color:var(--water);background:rgba(56,189,248,.08);border:1px solid rgba(56,189,248,.2);padding:2px 8px;border-radius:20px;white-space:nowrap;flex-shrink:0;margin-top:2px;}
+.chev{color:var(--faint);font-size:.8rem;margin-top:4px;transition:transform .22s;}
+.card.open .chev{transform:rotate(180deg);}
+
+/* badge strip */
+.badge-strip{display:flex;flex-wrap:wrap;gap:4px;padding:7px 14px;background:rgba(0,0,0,.15);border-bottom:1px solid var(--border);min-height:32px;}
+.b{font-size:.63rem;font-weight:700;padding:2px 7px;border-radius:3px;text-transform:uppercase;letter-spacing:.05em;}
+.bDock{background:rgba(59,130,246,.15);color:var(--blue);border:1px solid rgba(59,130,246,.3);}
+.bChamp{background:rgba(245,158,11,.18);color:var(--gold);border:1px solid rgba(245,158,11,.4);}
+.bGrand{background:rgba(245,158,11,.28);color:#fcd34d;border:1px solid rgba(245,158,11,.55);}
+.bSupreme{background:rgba(250,204,21,.3);color:#fef08a;border:1px solid rgba(250,204,21,.55);}
+.bShed{background:rgba(167,139,250,.15);color:var(--purple);border:1px solid rgba(167,139,250,.3);}
+.bTR{background:rgba(251,146,60,.15);color:var(--orange);border:1px solid rgba(251,146,60,.3);}
+.bNone{font-size:.72rem;color:var(--faint);padding:4px 0;}
+
+/* card body */
+.card-body{display:none;padding:14px;}
+.card.open .card-body{display:block;}
+
+/* stat chips row */
+.chips{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:14px;}
+.chip{background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:8px 6px;text-align:center;}
+.chip-val{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;line-height:1;}
+.chip-lbl{font-size:.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin-top:1px;}
+
+/* sport tabs */
+.tabs{display:flex;border:1px solid var(--border);border-radius:4px;overflow:hidden;margin-bottom:12px;}
+.tab{flex:1;padding:6px 4px;background:transparent;border:none;border-right:1px solid var(--border);color:var(--muted);font-family:'DM Sans',sans-serif;font-size:.7rem;font-weight:600;cursor:pointer;text-transform:uppercase;letter-spacing:.05em;transition:all .15s;}
+.tab:last-child{border-right:none;}
+.tab:hover{background:var(--surface2);color:var(--text);}
+.tab.on{background:var(--surface2);}
+.tab.on[data-s="dock"]{color:var(--blue);}
+.tab.on[data-s="shed"]{color:var(--purple);}
+.tab.on[data-s="tr"]{color:var(--orange);}
+.pane{display:none;}
+.pane.on{display:block;}
+
+/* ── DOCK PANEL ──────────────────── */
+.sec{font-size:.68rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;padding-bottom:5px;border-bottom:1px solid var(--border);margin:10px 0 8px;display:flex;justify-content:space-between;align-items:center;}
+.sec a{font-size:.62rem;color:var(--faint);text-decoration:none;}
+.sec a:hover{color:var(--blue);}
+
+.ev{margin-bottom:11px;}
+.ev-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;}
+.ev-name{font-size:.8rem;font-weight:600;color:var(--text);display:flex;align-items:center;gap:6px;}
+.dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+.ev-right{display:flex;align-items:center;gap:7px;}
+.ev-pts{font-family:'DM Mono',monospace;font-size:.75rem;color:var(--muted);}
+.ev-badge{font-size:.65rem;font-weight:700;padding:1px 6px;border-radius:3px;}
+.bar{height:5px;background:var(--bg);border-radius:3px;overflow:hidden;margin-bottom:3px;}
+.fill{height:100%;border-radius:3px;transition:width .5s ease;}
+.ev-sub{font-size:.7rem;color:var(--faint);}
+
+.bests{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px;}
+.best-chip{font-family:'DM Mono',monospace;font-size:.68rem;padding:2px 8px;border-radius:3px;background:var(--bg);border:1px solid var(--border);color:var(--muted);}
+.best-chip span{color:var(--text);}
+
+/* champion block */
+.champ-box{background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:10px 12px;margin-top:10px;}
+.champ-head{font-size:.72rem;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:.07em;margin-bottom:7px;}
+.champ-tier{margin-bottom:7px;}
+.tier-name{font-size:.72rem;font-weight:600;margin-bottom:3px;}
+.req{font-size:.73rem;color:var(--muted);display:flex;align-items:center;gap:6px;margin-bottom:3px;}
+.req.met{color:var(--green);}
+.req .tick{width:14px;text-align:center;flex-shrink:0;}
+
+/* ── SHED PANEL ──────────────────── */
+.shed-lv{margin-bottom:9px;}
+.shed-lv-top{display:flex;justify-content:space-between;margin-bottom:4px;}
+.shed-lv-name{font-size:.8rem;font-weight:600;color:var(--text);}
+.shed-lv-stat{font-size:.72rem;}
+.test-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:10px;}
+.test-cat{background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:8px 10px;}
+.test-cat-name{font-size:.67rem;font-weight:700;color:var(--purple);text-transform:uppercase;letter-spacing:.07em;margin-bottom:5px;}
+.test-el{font-size:.7rem;color:var(--faint);display:flex;align-items:center;gap:5px;margin-bottom:3px;}
+.test-el.pass{color:var(--text);}
+.tdot{width:6px;height:6px;border-radius:50%;background:var(--faint);flex-shrink:0;}
+.test-el.pass .tdot{background:var(--green);}
+
+/* ── TR PANEL ──────────────────── */
+.tr-stat{display:flex;justify-content:space-between;margin-bottom:4px;}
+.tr-label{font-size:.8rem;font-weight:600;color:var(--text);}
+.tr-val{font-family:'DM Mono',monospace;font-size:.8rem;color:var(--orange);}
+
+/* ── HISTORY TABLE ──────────────── */
+.hist-toggle{font-size:.73rem;color:var(--blue);cursor:pointer;display:inline-block;margin-top:5px;}
+.hist-toggle:hover{color:var(--cyan);}
+.hist-wrap{display:none;margin-top:5px;overflow-x:auto;}
+.hist-wrap.open{display:block;}
+table.ht{width:100%;border-collapse:collapse;font-size:.69rem;}
+table.ht th{background:rgba(0,0,0,.35);color:var(--muted);padding:4px 7px;text-align:left;white-space:nowrap;font-family:'DM Mono',monospace;font-size:.63rem;font-weight:500;}
+table.ht td{padding:4px 7px;border-bottom:1px solid rgba(255,255,255,.03);color:var(--muted);white-space:nowrap;}
+table.ht tr:last-child td{border-bottom:none;}
+table.ht tr:hover td{background:rgba(255,255,255,.02);}
+table.ht .hi{color:var(--text);}
+table.ht .qy{color:var(--green);font-weight:600;}
+table.ht .qn{color:var(--red);}
+table.ht .fin{color:var(--gold);}
+
+@media(max-width:580px){
+  .dog-grid{grid-template-columns:1fr;}
+  .chips{grid-template-columns:repeat(4,1fr);}
+  .test-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hdr">
+    <div class="logo">NDS<small>National Dog Sports · Title Tracker</small></div>
+    <div class="search-wrap">
+      <input id="search" type="text" placeholder="NDS# or name…" oninput="onSearch()">
+    </div>
+    <div class="sport-filters">
+      <button class="sf active" onclick="setFilter('all',this)">All</button>
+      <button class="sf" onclick="setFilter('dock',this)">🌊 Dock</button>
+      <button class="sf" onclick="setFilter('shed',this)">🦌 Shed</button>
+      <button class="sf" onclick="setFilter('tr',this)">🏃 Recall</button>
+      <button class="sf" onclick="setFilter('champ',this)">🏆 Champions</button>
+    </div>
+    <div class="hdr-count">Showing <span id="dogCount">0</span> dogs</div>
+  </div>
+  <div class="load-bar"><div class="load-fill" id="loadBar"></div></div>
+</header>
+
+<main>
+  <div id="status"><span class="spin"></span>Loading data from GitHub…</div>
+  <div class="dog-grid" id="grid"></div>
+</main>
+
+<script>
+// ══════════════════════════════════════════════
+//  TITLE THRESHOLDS  (calculated live from raw pts)
+// ══════════════════════════════════════════════
+const LJ_T=[{p:55,n:'Dock Diver',a:'DD'},{p:205,n:'Advanced Long Jump',a:'ADJ'},{p:455,n:'Expert Long Jump',a:'ELJ'},{p:955,n:'Specialist Long Jump',a:'SLJ'}];
+const SS_T=[{p:45,n:'Basic Speed Swim',a:'BSS'},{p:145,n:'Advanced Speed Swim',a:'ASS'},{p:345,n:'Expert Speed Swim',a:'ESS'},{p:545,n:'Specialist Speed Swim',a:'SpSS'}];
+const GJ_T=[{p:45,n:'Basic Grab Jump',a:'BGJ'},{p:145,n:'Advanced Grab Jump',a:'AGJ'},{p:345,n:'Expert Grab Jump',a:'EGJ'},{p:545,n:'Specialist Grab Jump',a:'SpGJ'}];
+const FF_T=[{p:45,n:'Basic Fast Fetch',a:'BFF'},{p:145,n:'Advanced Fast Fetch',a:'AFF'},{p:345,n:'Expert Fast Fetch',a:'EFF'},{p:545,n:'Specialist Fast Fetch',a:'SpFF'}];
+const TR_T=[{p:200,n:'Novice Recaller',a:'NR'},{p:500,n:'Advanced Recaller',a:'AR'},{p:1000,n:'Master Recaller',a:'MR'},{p:1500,n:'Expert Recaller',a:'ExR'},{p:2000,n:'Specialist Recaller',a:'SpR'},{p:2500,n:'Champion Recaller',a:'ChR'}];
+
+function curTitle(pts,thr){let r=null;for(const t of thr)if(pts>=t.p)r=t;return r;}
+function nxtTitle(pts,thr){for(const t of thr)if(pts<t.p)return t;return null;}
+function pct(v,max){return max>0?Math.min(100,(v/max)*100):0;}
+
+// ══════════════════════════════════════════════
+//  DATA STATE
+// ══════════════════════════════════════════════
+let DOGS=[];      // array from Dogs sheet
+let RESULTS=[];   // array from Results sheet
+let TITLES=[];    // array from Titles sheet
+let STESTS=[];    // array from ShedTests sheet
+
+// Pre-built per-dog index
+let DOG_DATA={};  // {id -> {lj,ss,gj,ff,sa,tr,titles,shedTests}}
+
+let curFilter='all';
+
+// ══════════════════════════════════════════════
+//  LOAD xlsx  (same pattern as CWAGS tracker)
+// ══════════════════════════════════════════════
+function loadBar(pct){document.getElementById('loadBar').style.width=pct+'%';}
+
+fetch('https://raw.githubusercontent.com/Chrojoh/NSD/main/NDS_Master_Data.xlsx')
+  .then(r=>{
+    if(!r.ok)throw new Error(`HTTP ${r.status} — check https://raw.githubusercontent.com/Chrojoh/NSD/main/NDS_Master_Data.xlsx is accessible`);
+    loadBar(30);
+    return r.arrayBuffer();
+  })
+  .then(buf=>{
+    loadBar(60);
+    const wb=XLSX.read(new Uint8Array(buf),{type:'array',cellDates:false});
+    DOGS   =XLSX.utils.sheet_to_json(wb.Sheets['Dogs']       ||{},{defval:''});
+    RESULTS=XLSX.utils.sheet_to_json(wb.Sheets['Results']    ||{},{defval:''});
+    TITLES =XLSX.utils.sheet_to_json(wb.Sheets['Titles']     ||{},{defval:''});
+    STESTS =XLSX.utils.sheet_to_json(wb.Sheets['ShedTests']  ||{},{defval:''});
+    loadBar(90);
+    buildIndex();
+    loadBar(100);
+    render();
+    setTimeout(()=>loadBar(0),500);
+  })
+  .catch(e=>{
+    document.getElementById('status').innerHTML=`❌ ${e.message}`;
+    loadBar(0);
+  });
+
+// ══════════════════════════════════════════════
+//  INDEX  — group all rows by NDS#
+// ══════════════════════════════════════════════
+function pad(id){return String(id||'').padStart(4,'0');}
+
+function buildIndex(){
+  DOG_DATA={};
+
+  // Register all dogs
+  for(const d of DOGS){
+    const id=pad(d['NDS#']);
+    if(!id||id==='0000')continue;
+    DOG_DATA[id]={
+      id, name:d['Name']||'', owner:d['Owner']||'', breed:d['Breed']||'', sizeClass:d['SizeClass']||'Open',
+      lj:[], ss:[], gj:[], ff:[], sa:[], tr:[], titles:[], shedTests:{},
+    };
+  }
+
+  // Add any dog seen in results but not in Dogs sheet
+  for(const r of RESULTS){
+    const id=pad(r['NDS#']);
+    if(!id||id==='0000')continue;
+    if(!DOG_DATA[id])DOG_DATA[id]={id,name:r['Name']||'',owner:'',breed:'',sizeClass:'Open',lj:[],ss:[],gj:[],ff:[],sa:[],tr:[],titles:[],shedTests:{}};
+  }
+
+  // Slot results into sport buckets
+  for(const r of RESULTS){
+    const id=pad(r['NDS#']);
+    if(!DOG_DATA[id])continue;
+    const sport=String(r['Sport']||'').trim().toUpperCase();
+    const row={
+      date:r['Date']||'', event:r['Event']||'', division:r['Division']||'',
+      placement:r['Placement']||'', titlePts:Number(r['TitlePts'])||0,
+      winPts:Number(r['WinPts'])||0, finals:String(r['Finals']||'').toUpperCase()==='TRUE',
+      notes:r['Notes']||'',
+    };
+    if(sport==='LJ'){
+      row.ft=r['JumpFt']!==''?Number(r['JumpFt']):null;
+      row.ins=r['JumpIn']!==''?Number(r['JumpIn']):null;
+      DOG_DATA[id].lj.push(row);
+    } else if(sport==='SS'){
+      row.time=r['SwimTime']!==''?Number(r['SwimTime']):null;
+      DOG_DATA[id].ss.push(row);
+    } else if(sport==='GJ'){
+      row.dist=r['JumpFt']!==''?Number(r['JumpFt']):null;
+      DOG_DATA[id].gj.push(row);
+    } else if(sport==='FF'){
+      row.pts=r['FFPoints']!==''?Number(r['FFPoints']):null;
+      row.time=r['FFTime']!==''?Number(r['FFTime']):null;
+      DOG_DATA[id].ff.push(row);
+    } else if(sport==='SA'){
+      row.level=Number(r['SALevel'])||1;
+      row.qualifying=String(r['SAQualify']||'').trim().toUpperCase();
+      row.totalTime=r['SATotalTime']||'';
+      DOG_DATA[id].sa.push(row);
+    } else if(sport==='TR'){
+      row.time=r['TRTime']!==''?Number(r['TRTime']):null;
+      row.speed=r['TRSpeedKMH']!==''?Number(r['TRSpeedKMH']):null;
+      row.trPts=Number(r['TitlePts'])||0;
+      DOG_DATA[id].tr.push(row);
+    }
+  }
+
+  // Titles
+  for(const t of TITLES){
+    const id=pad(t['NDS#']);
+    if(!DOG_DATA[id])continue;
+    DOG_DATA[id].titles.push({name:t['TitleName']||'',division:t['Division']||'',date:t['Date']||'',sport:t['Sport']||''});
+  }
+
+  // Shed video tests — index by category
+  for(const t of STESTS){
+    const id=pad(t['NDS#']);
+    if(!DOG_DATA[id])continue;
+    const cat=String(t['Category']||'').trim().toLowerCase();
+    if(String(t['Result']||'').trim().toLowerCase()==='pass'){
+      if(!DOG_DATA[id].shedTests[cat])DOG_DATA[id].shedTests[cat]=new Set();
+      DOG_DATA[id].shedTests[cat].add(String(t['Element']||'').trim());
+    }
+  }
+}
+
+// ══════════════════════════════════════════════
+//  RENDER
+// ══════════════════════════════════════════════
+function render(){
+  const grid=document.getElementById('grid');
+  const status=document.getElementById('status');
+  const q=document.getElementById('search').value.trim().toLowerCase();
+
+  const dogs=Object.values(DOG_DATA).filter(d=>{
+    if(q&&!d.name.toLowerCase().includes(q)&&!d.id.includes(q))return false;
+    if(curFilter==='dock'&&!d.lj.length&&!d.ss.length&&!d.gj.length&&!d.ff.length)return false;
+    if(curFilter==='shed'&&!d.sa.length&&!Object.keys(d.shedTests).length)return false;
+    if(curFilter==='tr'&&!d.tr.length)return false;
+    if(curFilter==='champ'){
+      const names=d.titles.map(t=>t.name.toLowerCase());
+      if(!names.some(n=>n.includes('champion'))&&!isChDD(d).met)return false;
+    }
+    return true;
+  });
+
+  // Sort: most total pts first
+  dogs.sort((a,b)=>totalDockPts(b)-totalDockPts(a));
+
+  document.getElementById('dogCount').textContent=dogs.length;
+  status.style.display='none';
+  grid.innerHTML='';
+
+  if(!dogs.length){
+    status.innerHTML='No dogs match.';
+    status.style.display='';
+    return;
+  }
+
+  for(const dog of dogs){
+    const card=document.createElement('div');
+    card.className='card';
+    card.innerHTML=buildCard(dog);
+    grid.appendChild(card);
+  }
+}
+
+function onSearch(){render();}
+function setFilter(f,btn){
+  curFilter=f;
+  document.querySelectorAll('.sf').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  render();
+}
+
+// ══════════════════════════════════════════════
+//  DERIVED STATS  (computed live from raw rows)
+// ══════════════════════════════════════════════
+function sumPts(rows){return rows.reduce((s,r)=>s+(r.titlePts||0),0);}
+function sumWin(rows){return rows.reduce((s,r)=>s+(r.winPts||0),0);}
+function totalDockPts(d){return sumPts(d.lj)+sumPts(d.ss)+sumPts(d.gj)+sumPts(d.ff);}
+function totalWinPts(d){return sumWin(d.lj)+sumWin(d.ss)+sumWin(d.gj)+sumWin(d.ff);}
+function trTotal(d){return d.tr.reduce((s,r)=>s+(r.trPts||0),0);}
+
+// SA: count qualifying passes per level
+function shedPasses(d,level){
+  return d.sa.filter(r=>r.level===level&&r.qualifying==='Y').length;
+}
+function shedLevelDone(d,level){return shedPasses(d,level)>=4;}
+
+// All 4 shed test categories complete?
+function sasvComplete(d){
+  return ['locate','retrieve','seasonal','multiples'].every(c=>d.shedTests[c]&&d.shedTests[c].size>0);
+}
+
+// Champion checks (from raw pts, not titles sheet)
+function isChDD(d){
+  const tot=totalDockPts(d);
+  const win=totalWinPts(d);
+  const allBasic=sumPts(d.lj)>=55&&sumPts(d.ss)>=45&&sumPts(d.gj)>=45&&sumPts(d.ff)>=45;
+  return{tot,win,allBasic,met:tot>=200&&allBasic&&win>=5};
+}
+function isGChDD(d){
+  const tot=totalDockPts(d);
+  const win=totalWinPts(d);
+  const each100=sumPts(d.lj)>=100&&sumPts(d.ss)>=100&&sumPts(d.gj)>=100&&sumPts(d.ff)>=100;
+  return{tot,win,each100,met:tot>=500&&each100&&win>=15};
+}
+function isSChDD(d){
+  const tot=totalDockPts(d);
+  const win=totalWinPts(d);
+  const allAdv=sumPts(d.lj)>=205&&sumPts(d.ss)>=145&&sumPts(d.gj)>=145&&sumPts(d.ff)>=145;
+  return{tot,win,allAdv,met:tot>=1000&&allAdv&&win>=25};
+}
+
+// Personal bests
+function pbLJ(d){
+  const bests=d.lj.filter(r=>r.ft!=null&&!r.finals);
+  if(!bests.length)return null;
+  return bests.reduce((b,r)=>r.ft*12+(r.ins||0)>b.ft*12+(b.ins||0)?r:b,bests[0]);
+}
+function pbSS(d){const f=d.ss.filter(r=>r.time!=null);if(!f.length)return null;return f.reduce((b,r)=>r.time<b.time?r:b,f[0]);}
+function pbGJ(d){const f=d.gj.filter(r=>r.dist!=null);if(!f.length)return null;return f.reduce((b,r)=>r.dist>b.dist?r:b,f[0]);}
+function pbFF(d){const f=d.ff.filter(r=>r.pts!=null);if(!f.length)return null;return f.reduce((b,r)=>r.pts>b.pts?r:b,f[0]);}
+
+// ══════════════════════════════════════════════
+//  BUILD CARD HTML
+// ══════════════════════════════════════════════
+function e(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+
+function buildBadges(d){
+  const names=d.titles.map(t=>t.name.toLowerCase());
+  let out='';
+  // Champion badges — prefer Titles sheet if present, fall back to calculated
+  if(isSChDD(d).met||names.some(n=>n.includes('supreme')))
+    out+=`<span class="b bSupreme">SChDD</span>`;
+  else if(isGChDD(d).met||names.some(n=>n.includes('grand champ')))
+    out+=`<span class="b bGrand">GChDD</span>`;
+  else if(isChDD(d).met||names.some(n=>n.includes('champion dock')))
+    out+=`<span class="b bChamp">ChDD</span>`;
+  // Dock titles (calculated live)
+  const lj=curTitle(sumPts(d.lj),LJ_T);
+  const ss=curTitle(sumPts(d.ss),SS_T);
+  const gj=curTitle(sumPts(d.gj),GJ_T);
+  const ff=curTitle(sumPts(d.ff),FF_T);
+  if(lj)out+=`<span class="b bDock" title="Long Jump">${e(lj.a)}</span>`;
+  if(ss)out+=`<span class="b bDock" title="Speed Swim">${e(ss.a)}</span>`;
+  if(gj)out+=`<span class="b bDock" title="Grab Jump">${e(gj.a)}</span>`;
+  if(ff)out+=`<span class="b bDock" title="Fast Fetch">${e(ff.a)}</span>`;
+  // Shed
+  if(sasvComplete(d))out+=`<span class="b bShed">SASV</span>`;
+  if(shedLevelDone(d,4))out+=`<span class="b bShed">SA-L4</span>`;
+  else if(shedLevelDone(d,3))out+=`<span class="b bShed">SA-L3</span>`;
+  else if(shedLevelDone(d,2))out+=`<span class="b bShed">SA-L2</span>`;
+  else if(shedLevelDone(d,1))out+=`<span class="b bShed">SA-L1</span>`;
+  // TR
+  const tr=curTitle(trTotal(d),TR_T);
+  if(tr)out+=`<span class="b bTR">${e(tr.a)}</span>`;
+  return out||`<span class="bNone">No titles yet</span>`;
+}
+
+function buildCard(d){
+  const ljPts=sumPts(d.lj), ssPts=sumPts(d.ss), gjPts=sumPts(d.gj), ffPts=sumPts(d.ff);
+  const saTot=d.sa.length, trPts=trTotal(d);
+  const totalShedPass=[1,2,3,4].reduce((s,l)=>s+shedPasses(d,l),0);
+
+  return `
+  <div class="card-head" onclick="toggle(this)">
+    <div>
+      <div class="dog-name">${e(d.name)}</div>
+      ${d.breed?`<div style="font-size:.72rem;color:var(--muted);margin-top:1px">${e(d.breed)}</div>`:''}
+    </div>
+    <div style="display:flex;gap:6px;align-items:flex-start">
+      <div class="dog-id">#${e(d.id)}</div>
+      <div class="chev">▼</div>
+    </div>
+  </div>
+  <div class="badge-strip">${buildBadges(d)}</div>
+  <div class="card-body">
+    <div class="chips">
+      <div class="chip"><div class="chip-val" style="color:var(--blue)">${ljPts+ssPts+gjPts+ffPts}</div><div class="chip-lbl">Dock Pts</div></div>
+      <div class="chip"><div class="chip-val" style="color:var(--gold)">${totalWinPts(d)}</div><div class="chip-lbl">Win Pts</div></div>
+      <div class="chip"><div class="chip-val" style="color:var(--purple)">${totalShedPass}</div><div class="chip-lbl">Shed Pass</div></div>
+      <div class="chip"><div class="chip-val" style="color:var(--orange)">${trPts.toFixed(0)}</div><div class="chip-lbl">Recall Pts</div></div>
+    </div>
+    <div class="tabs">
+      <button class="tab on" data-s="dock" onclick="switchTab(this)">🌊 Dock</button>
+      <button class="tab" data-s="shed" onclick="switchTab(this)">🦌 Shed</button>
+      <button class="tab" data-s="tr" onclick="switchTab(this)">🏃 Recall</button>
+    </div>
+    <div class="pane on" data-s="dock">${dockPanel(d)}</div>
+    <div class="pane" data-s="shed">${shedPanel(d)}</div>
+    <div class="pane" data-s="tr">${trPanel(d)}</div>
+  </div>`;
+}
+
+// ── DOCK PANEL ────────────────────────────────
+function evBlock(d, rows, label, sport, thr, colorVar, pbHtml){
+  const pts=sumPts(rows);
+  const win=sumWin(rows);
+  const cur=curTitle(pts,thr);
+  const nxt=nxtTitle(pts,thr);
+  const prevPts=cur?thr[thr.indexOf(cur)-1]?.p||0:0;
+  const p=nxt?pct(pts-prevPts,nxt.p-prevPts):100;
+  const sub=nxt?`${pts}pt · need ${nxt.p-pts} more for ${nxt.n}`:(cur?`${pts}pt · ${cur.n} ✓`:`${pts}pt · need ${(thr[0].p-pts)} for ${thr[0].n}`);
+  const badge=cur?`<span class="ev-badge" style="background:rgba(${hexToRgb(colorVar)},.15);color:${colorVar};border:1px solid rgba(${hexToRgb(colorVar)},.3)">${cur.a}</span>`:'';
+  const tid=`h-${d.id}-${sport}`;
+  return `<div class="ev">
+    <div class="ev-top">
+      <span class="ev-name"><span class="dot" style="background:${colorVar}"></span>${label}</span>
+      <span class="ev-right"><span class="ev-pts">${pts}pt${win?` · ${win}w`:''}</span>${badge}</span>
+    </div>
+    <div class="bar"><div class="fill" style="width:${p}%;background:${colorVar}"></div></div>
+    <div class="ev-sub">${sub}</div>
+    ${rows.length?histToggle(tid,rows.length)+histTable(tid,rows,sport):''}
+  </div>`;
+}
+
+function dockPanel(d){
+  const bests=[];
+  const pb=pbLJ(d); if(pb)bests.push(`LJ <span>${pb.ft}'${pb.ins||0}"</span>`);
+  const ps=pbSS(d); if(ps)bests.push(`SS <span>${ps.time}s</span>`);
+  const pg=pbGJ(d); if(pg)bests.push(`GJ <span>${pg.dist}'</span>`);
+  const pf=pbFF(d); if(pf)bests.push(`FF <span>${pf.pts}pts</span>`);
+  const bestHtml=bests.length?`<div class="bests">${bests.map(b=>`<div class="best-chip">${b}</div>`).join('')}</div>`:'';
+
+  let html=`<div class="sec">Dock Diving <a href="https://nationaldogsports.com/dock-diving" target="_blank">📄 Rules</a></div>`;
+  html+=bestHtml;
+  html+=evBlock(d,d.lj,'Long Jump','lj',LJ_T,'#3b82f6','');
+  html+=evBlock(d,d.ss,'Speed Swim','ss',SS_T,'#06b6d4','');
+  html+=evBlock(d,d.gj,'Grab Jump','gj',GJ_T,'#22c55e','');
+  html+=evBlock(d,d.ff,'Fast Fetch','ff',FF_T,'#f59e0b','');
+  html+=champBlock(d);
+  return html;
+}
+
+function champBlock(d){
+  const ch=isChDD(d), gc=isGChDD(d), sc=isSChDD(d);
+  const tiers=[
+    {label:'Champion Dock Diver (ChDD)',done:ch.met,reqs:[
+      {t:`200 total pts (${ch.tot})`,m:ch.tot>=200},
+      {t:'Basic in all 4 events',m:ch.allBasic},
+      {t:`5 win pts (${ch.win})`,m:ch.win>=5},
+    ]},
+    {label:'Grand Champion (GChDD)',done:gc.met,reqs:[
+      {t:`500 total pts (${gc.tot})`,m:gc.tot>=500},
+      {t:'100 pts each event',m:gc.each100},
+      {t:`15 win pts (${gc.win})`,m:gc.win>=15},
+    ]},
+    {label:'Supreme Champion (SChDD)',done:sc.met,reqs:[
+      {t:`1000 total pts (${sc.tot})`,m:sc.tot>=1000},
+      {t:'Advanced in all 4 events',m:sc.allAdv},
+      {t:`25 win pts (${sc.win})`,m:sc.win>=25},
+    ]},
+  ];
+  let html=`<div class="champ-box"><div class="champ-head">Champion Progress</div>`;
+  for(const tier of tiers){
+    html+=`<div class="champ-tier"><div class="tier-name" style="color:${tier.done?'var(--gold)':'var(--muted)'};font-size:.72rem">${tier.done?'✓ ':''}${tier.label}</div>`;
+    for(const r of tier.reqs) html+=`<div class="req${r.m?' met':''}"><span class="tick">${r.m?'✓':'○'}</span>${r.t}</div>`;
+    html+='</div>';
+  }
+  return html+'</div>';
+}
+
+// ── SHED PANEL ────────────────────────────────
+const SHED_CATS={
+  Locate:['Open Field (mid-field)','Open Field (near edge)','Brush/Forest (base of tree)','Brush/Forest (between trees)','Gully/Ditch (1)','Gully/Ditch (2)','Dangler (1)','Dangler (2)'],
+  Retrieve:['30 Meters','Grade','Obstacle','Bush'],
+  Seasonal:['Snow/Water','Mud/Dirt','Leaves','Wind/Precipitation'],
+  Multiples:['2-Multi-Factor','6 No Cover','3 Low Cover','Unknown Number'],
+};
+const SHED_LV={1:'Level 1 — Locate',2:'Level 2 — Double Retrieve',3:'Level 3 — Hidden Antlers',4:'Level 4 — Quadrant Search'};
+
+function shedPanel(d){
+  let html=`<div class="sec">Shed Antler Hunting <a href="https://nationaldogsports.com/shed-antler-hunting" target="_blank">📄 Rules</a></div>`;
+  for(let l=1;l<=4;l++){
+    const passes=shedPasses(d,l);
+    const done=passes>=4;
+    const locked=l>=3&&!shedLevelDone(d,l-1)&&!done;
+    const p=done?100:pct(passes,4);
+    const stat=done?`<span style="color:var(--green)">✓ Titled</span>`:locked?`<span style="color:var(--faint)">🔒</span>`:`<span style="color:var(--muted)">${passes}/4 passes</span>`;
+    html+=`<div class="shed-lv">
+      <div class="shed-lv-top"><span class="shed-lv-name">${SHED_LV[l]}</span>${stat}</div>
+      <div class="bar"><div class="fill" style="width:${locked?0:p}%;background:${done?'var(--green)':'var(--purple)'}"></div></div>
+    </div>`;
+  }
+  // SA history table
+  if(d.sa.length){
+    const tid=`h-${d.id}-sa`;
+    html+=histToggle(tid,d.sa.length)+histTable(tid,d.sa,'sa');
+  }
+  // Video tests
+  const complete=sasvComplete(d);
+  const catsDone=Object.keys(SHED_CATS).filter(c=>d.shedTests[c.toLowerCase()]&&d.shedTests[c.toLowerCase()].size>0).length;
+  html+=`<div class="sec" style="margin-top:12px">Video Tests (SASV) ${complete?'<span style="color:var(--green)">✓</span>':`<span>${catsDone}/4</span>`}</div>`;
+  html+=`<div class="test-grid">`;
+  for(const [cat,els] of Object.entries(SHED_CATS)){
+    const passed=d.shedTests[cat.toLowerCase()]||new Set();
+    const catDone=passed.size>0;
+    html+=`<div class="test-cat"><div class="test-cat-name">${cat} ${catDone?'✓':''}</div>`;
+    for(const el of els){
+      const p=passed.has(el);
+      html+=`<div class="test-el${p?' pass':''}"><div class="tdot"></div>${e(el)}</div>`;
+    }
+    html+=`</div>`;
+  }
+  html+=`</div>`;
+  return html;
+}
+
+// ── TR PANEL ─────────────────────────────────
+function trPanel(d){
+  const pts=trTotal(d);
+  const cur=curTitle(pts,TR_T);
+  const nxt=nxtTitle(pts,TR_T);
+  const prevPts=cur?TR_T[TR_T.indexOf(cur)-1]?.p||0:0;
+  const p=nxt?pct(pts-prevPts,nxt.p-prevPts):100;
+  const best=d.tr.filter(r=>r.speed!=null).reduce((b,r)=>!b||r.speed>b.speed?r:b,null);
+  let html=`<div class="sec">Timed Recall <a href="https://nationaldogsports.com/timed-recall" target="_blank">📄 Rules</a></div>`;
+  html+=`<div class="tr-stat"><span class="tr-label">Total Points</span><span class="tr-val">${pts.toFixed(2)}</span></div>`;
+  html+=`<div class="bar" style="margin-bottom:4px"><div class="fill" style="width:${p}%;background:var(--orange)"></div></div>`;
+  const sub=nxt?`${pts.toFixed(1)}pt · need ${(nxt.p-pts).toFixed(1)} more for ${nxt.n}`:(cur?`${pts.toFixed(1)}pt · ${cur.n} ✓`:`${pts.toFixed(1)}pt · need ${(TR_T[0].p-pts).toFixed(1)} for ${TR_T[0].n}`);
+  html+=`<div class="ev-sub" style="margin-bottom:8px">${sub}</div>`;
+  if(cur)html+=`<div style="margin-bottom:8px"><span class="b bTR">${e(cur.a)}</span> <span style="font-size:.72rem;color:var(--muted)">${e(cur.n)}</span></div>`;
+  if(best)html+=`<div class="bests"><div class="best-chip">Best Speed <span>${best.speed.toFixed(2)} km/h</span></div>${best.time?`<div class="best-chip">Best Time <span>${best.time}s</span></div>`:''}</div>`;
+  if(d.tr.length){const tid=`h-${d.id}-tr`;html+=histToggle(tid,d.tr.length)+histTable(tid,d.tr,'tr');}
+  return html;
+}
+
+// ── HISTORY TABLES ────────────────────────────
+function histToggle(id,count){
+  return `<span class="hist-toggle" onclick="togHist('${id}',this)">▶ Show ${count} run${count!==1?'s':''}</span>`;
+}
+
+function histTable(id,rows,sport){
+  const sorted=[...rows].sort((a,b)=>new Date(b.date)-new Date(a.date));
+  let th='<tr>';
+  th+=`<th>Date</th><th>Event</th>`;
+  if(sport==='lj')th+=`<th>Jump</th>`;
+  if(sport==='ss')th+=`<th>Time</th>`;
+  if(sport==='gj')th+=`<th>Dist</th>`;
+  if(sport==='ff')th+=`<th>Pts</th><th>Time</th>`;
+  if(sport==='sa')th+=`<th>Lv</th><th>Time</th><th>Q?</th>`;
+  if(sport==='tr')th+=`<th>Time</th><th>km/h</th>`;
+  th+=`<th>Div</th><th>Pl.</th><th>TiPts</th><th>Win</th></tr>`;
+
+  let body='';
+  for(const r of sorted){
+    const fin=r.finals;
+    const isRamp=String(r.division||'').toLowerCase().includes('ramp');
+    let extra='';
+    if(sport==='lj')extra=r.ft!=null?`<td>${r.ft}'${r.ins||0}"</td>`:`<td>—</td>`;
+    if(sport==='ss')extra=r.time!=null?`<td>${r.time}s</td>`:`<td>—</td>`;
+    if(sport==='gj')extra=r.dist!=null?`<td>${r.dist}'</td>`:`<td>—</td>`;
+    if(sport==='ff')extra=`<td>${r.pts??'—'}</td><td>${r.time!=null?r.time+'s':'—'}</td>`;
+    if(sport==='sa'){
+      const qy=r.qualifying==='Y';
+      extra=`<td>${r.level}</td><td>${e(r.totalTime||'—')}</td><td class="${qy?'qy':'qn'}">${e(r.qualifying||'—')}</td>`;
+    }
+    if(sport==='tr')extra=`<td>${r.time!=null?r.time+'s':'—'}</td><td>${r.speed!=null?r.speed.toFixed(2):'—'}</td>`;
+    body+=`<tr>
+      <td class="hi">${e(r.date)}</td>
+      <td class="${fin?'fin':isRamp?'':''}">${e(r.event)}</td>
+      ${extra}
+      <td>${e(r.division||'—')}</td>
+      <td>${e(r.placement||'—')}</td>
+      <td class="${r.titlePts?'hi':''}">${r.titlePts||0}</td>
+      <td class="${r.winPts?'hi':''}">${r.winPts||0}</td>
+    </tr>`;
+  }
+  return `<div class="hist-wrap" id="${id}"><table class="ht"><thead>${th}</thead><tbody>${body}</tbody></table></div>`;
+}
+
+// ══════════════════════════════════════════════
+//  INTERACTIONS
+// ══════════════════════════════════════════════
+function toggle(head){head.closest('.card').classList.toggle('open');}
+function switchTab(btn){
+  const card=btn.closest('.card');
+  card.querySelectorAll('.tab').forEach(b=>b.classList.remove('on'));
+  card.querySelectorAll('.pane').forEach(p=>p.classList.remove('on'));
+  btn.classList.add('on');
+  card.querySelector(`.pane[data-s="${btn.dataset.s}"]`).classList.add('on');
+}
+function togHist(id,btn){
+  const wrap=document.getElementById(id);
+  const open=wrap.classList.toggle('open');
+  const rest=btn.textContent.replace(/^[▶▼] (Show|Hide) /,'');
+  btn.textContent=(open?'▼ Hide':'▶ Show')+' '+rest;
+}
+
+// CSS colour to RGB for badge backgrounds
+const CSS_COLOURS={
+  '#3b82f6':'59,130,246','#06b6d4':'6,182,212','#22c55e':'34,197,94',
+  '#f59e0b':'245,158,11','#a78bfa':'167,139,250','#fb923c':'251,146,60',
+};
+function hexToRgb(h){return CSS_COLOURS[h]||'128,128,128';}
+</script>
+</body>
+</html>
