@@ -960,7 +960,13 @@
           "placement": 3
         }
       ]
-    }
+    },
+    "classHistory": {
+      "2023": "Large Vet"
+    },
+    "class": "Large Vet",
+    "height": "L",
+    "breed": "Labrador Retriever"
   },
   {
     "id": "0002",
@@ -1394,7 +1400,13 @@
           "winPts": 1
         }
       ]
-    }
+    },
+    "classHistory": {
+      "2023": "Large Vet"
+    },
+    "class": "Large Vet",
+    "height": "L",
+    "breed": "Labrador Retriever"
   },
   {
     "id": "0003",
@@ -2264,7 +2276,13 @@
           "placement": 2
         }
       ]
-    }
+    },
+    "classHistory": {
+      "2023": "Large Vet"
+    },
+    "class": "Large Vet",
+    "height": "L",
+    "breed": "Labrador Retriever"
   },
   {
     "id": "0004",
@@ -3463,7 +3481,13 @@
           "placement": 1
         }
       ]
-    }
+    },
+    "classHistory": {
+      "2023": "Large Vet"
+    },
+    "class": "Large Vet",
+    "height": "L",
+    "breed": "Labrador Retriever"
   },
   {
     "id": "0005",
@@ -4135,7 +4159,13 @@
           "placement": 2
         }
       ]
-    }
+    },
+    "classHistory": {
+      "2023": "Large Open"
+    },
+    "class": "Large Open",
+    "height": "L",
+    "breed": "Labrador Retriever"
   },
   {
     "id": "0006",
@@ -4320,7 +4350,13 @@
       },
       "winPts": 0,
       "trialHistory": []
-    }
+    },
+    "classHistory": {
+      "2023": "Large Open"
+    },
+    "class": "Large Open",
+    "height": "L",
+    "breed": "Labrador Retriever"
   },
   {
     "id": "0007",
@@ -4403,7 +4439,13 @@
         ]
       }
     },
-    "titlesEarned": []
+    "titlesEarned": [],
+    "classHistory": {
+      "2023": "Large Vet"
+    },
+    "class": "Large Vet",
+    "height": "L",
+    "breed": "Labrador Retriever"
   },
   {
     "id": "0008",
@@ -5125,7 +5167,13 @@
         "division": "Senior",
         "date": "2025-08-10"
       }
-    ]
+    ],
+    "classHistory": {
+      "2023": "Large Vet"
+    },
+    "class": "Large Vet",
+    "height": "L",
+    "breed": "Labrador Retriever"
   },
   {
     "id": "0009",
@@ -5426,7 +5474,13 @@
           "winPts": 0
         }
       ]
-    }
+    },
+    "classHistory": {
+      "2023": "Large Vet"
+    },
+    "class": "Large Vet",
+    "height": "L",
+    "breed": "Labrador Retriever"
   },
   {
     "id": "0010",
@@ -5539,7 +5593,13 @@
         ]
       }
     },
-    "titlesEarned": []
+    "titlesEarned": [],
+    "classHistory": {
+      "2023": "Large Vet"
+    },
+    "class": "Large Vet",
+    "height": "L",
+    "breed": "Nova Scotia Duck Tolling Retriever"
   },
   {
     "id": "0011",
@@ -5772,7 +5832,13 @@
         "division": "Junior",
         "date": "2023-08-13"
       }
-    ]
+    ],
+    "classHistory": {
+      "2023": "Large Vet"
+    },
+    "class": "Large Vet",
+    "height": "L",
+    "breed": "Labrador Retriever"
   },
   {
     "id": "0012",
@@ -6519,7 +6585,13 @@
           "placement": 2
         }
       ]
-    }
+    },
+    "classHistory": {
+      "2023": "Large Vet"
+    },
+    "class": "Large Vet",
+    "height": "L",
+    "breed": "Labrador Retriever"
   },
   {
     "id": "0013",
@@ -6605,7 +6677,13 @@
           "placement": 3
         }
       ]
-    }
+    },
+    "classHistory": {
+      "2023": "Large Vet"
+    },
+    "class": "Large Vet",
+    "height": "L",
+    "breed": "Labrador Retriever"
   },
   {
     "id": "0014",
@@ -7377,7 +7455,13 @@
           "placement": 6
         }
       ]
-    }
+    },
+    "classHistory": {
+      "2023": "Large Open"
+    },
+    "class": "Large Open",
+    "height": "L",
+    "breed": "Labrador Retriever"
   },
   {
     "id": "0015",
@@ -7692,7 +7776,13 @@
           "placement": 15
         }
       ]
-    }
+    },
+    "classHistory": {
+      "2023": "Large Open"
+    },
+    "class": "Large Open",
+    "height": "L",
+    "breed": "Labrador Retriever"
   },
   {
     "id": "0016",
@@ -7984,7 +8074,13 @@
         "division": "Master",
         "date": "2024-06-16"
       }
-    ]
+    ],
+    "classHistory": {
+      "2023": "Large Vet"
+    },
+    "class": "Large Vet",
+    "height": "L",
+    "breed": "Labrador Retriever"
   },
   {
     "id": "0017",
@@ -8141,7 +8237,13 @@
         "division": "Senior",
         "date": "2024-08-10"
       }
-    ]
+    ],
+    "classHistory": {
+      "2023": "Large Vet"
+    },
+    "class": "Large Vet",
+    "height": "L",
+    "breed": "Labrador Retriever"
   },
   {
     "id": "0019",
@@ -8879,6 +8981,12 @@
           "placement": 8
         }
       ]
-    }
+    },
+    "classHistory": {
+      "2023": "Large Open"
+    },
+    "class": "Large Open",
+    "height": "L",
+    "breed": "Labrador Retriever"
   }
 ]
